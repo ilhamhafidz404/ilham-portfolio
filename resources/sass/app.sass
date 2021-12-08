@@ -18,6 +18,15 @@ $shadowPrimary: #dbcffd
   bottom: -20px
   right: -20px
   z-index: -1
+#aboutTitle::before
+  content: 'ABOUT'
+  color: transparent
+  position: absolute
+  -webkit-text-stroke-width: 2px
+  -webkit-text-stroke-color: $shadowPrimary
+  bottom: -20px
+  right: -20px
+  z-index: -1
 
 .card
   &.laravel-card
@@ -47,3 +56,23 @@ $shadowPrimary: #dbcffd
       top: -70px 
       z-index: -1 
       left: -30px
+
+
+
+.ilham-circle-img
+  background-image: url(../img/ilham.jpeg)
+.card-about
+  background: #efebfa
+  box-shadow: 0 0 12px rgba(89, 36, 237, 0.5)
+  .text-about::before
+      content: '"'
+      font-size: 330px
+      position: absolute
+      top: -190px
+      left: -40px
+      z-index: -1 !important
+      font-family: "Palanquin"
+      color: #dcd0fc
+.hireme-button:hover
+  background-color: #5924ed
+  color: white

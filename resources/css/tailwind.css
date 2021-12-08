@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .mybg-gray {
+    background-color: #efebfa;
+  }
+  .mytext-gray {
+    color: #efebfa;
+  }
+  /* Primary Color */
+  .mybg-primary {
+    background-color: #5924ed;
+  }
+  .mytext-primary {
+    color: #5924ed;
+  }
+  .myborder-primary {
+    border-color: #5924ed;
+  }
+  /* Font */
+  .myfont-montserrat {
+    font-family: "Montserrat";
+  }
+  .myfont-roboto-mono {
+    font-family: "Roboto Mono";
+  }
+  .myfont-poppins {
+    font-family: "Poppins";
+  }
+}

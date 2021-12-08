@@ -8,7 +8,80 @@
     <link rel="stylesheet" href="public/css/tailwind.css" />
     <link rel="stylesheet" href="public/css/app.css " />
   </head>
-  <body>
-    <h1>Hello</h1>
+  <body class="mybg-gray">
+    <div
+      id="navbarToggler"
+      class="
+        fixed
+        right-0
+        top-0
+        m-8
+        text-white
+        mybg-primary
+        p-3
+        cursor-pointer
+        hover:opacity-80
+        rounded-sm
+      "
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        />
+      </svg>
+    </div>
+    <div class="container mx-auto">
+      <header class="myfont-montserrat p-8 pt-20">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-center justify-center">
+            <div class="pl-20">
+              <h3 class="mytext-primary font-light tracking-tighter text-xl">
+                Hello I am
+              </h3>
+              <h1 class="uppercase text-6xl font-bold tracking-tight">
+                Ilham Hafidz
+              </h1>
+              <p class="myfont-roboto-mono mt-7">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda laudantium incidunt repudiandae itaque fuga placeat
+                aperiam saepe quos officiis. Eveniet esse provident,
+              </p>
+              <div class="mt-7">
+                <a
+                  href=""
+                  class="
+                    mybg-primary
+                    text-gray-100
+                    px-7
+                    py-2
+                    rounded-3xl
+                    font-semibold
+                    hover:opacity-90 hover:shadow-md
+                  "
+                >
+                  See My Works
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              src="public/img/ilham.jpeg"
+              alt="ilhamhafidz"
+              class="rounded w-80"
+            />
+          </div>
+        </div>
+      </header>
+    </div>
   </body>
 </html>

@@ -31880,6 +31880,34 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mybg-gray {
+  background-color: #efebfa;
+}
+
+.mytext-gray {
+  color: #efebfa;
+}
+
+/* Primary Color */
+
+.mybg-primary {
+  background-color: #5924ed;
+}
+
+.mytext-primary {
+  color: #5924ed;
+}
+
+.myborder-primary {
+  border-color: #5924ed;
+}
+
+/* Font */
+
+.myfont-montserrat {
+  font-family: "Montserrat";
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

@@ -1,1 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@600&family=Roboto+Mono:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200300;400;500;600;700;800;900')
+
+$shadowPrimary: #dbcffd
+
+@mixin cardImg_onHover()
+  top: -50px 
+  z-index: -1 
+  left: -20px
+  transition: 0.5s
+  
+
+#skillTitle::before
+  content: 'SKILL'
+  color: transparent
+  position: absolute
+  -webkit-text-stroke-width: 2px
+  -webkit-text-stroke-color: $shadowPrimary
+  bottom: -20px
+  right: -20px
+  z-index: -1
+
+.card
+  &.laravel-card
+    &:hover
+      background-color: rgba(239, 68, 68, 0.1)
+    .laravel-img
+      @include cardImg_onHover()
+  &.tailwind-card
+    background-color: #06b6d4
+    &:hover
+      background-color: rgba(6, 182, 212, 0.1)
+    .tailwind-img
+      @include cardImg_onHover()
+  &.vuejs-card
+    background-color: #41b883
+    &:hover
+      background-color: rgba(65, 184, 131, 0.1)
+    .vuejs-img
+      @include cardImg_onHover()
+  &:hover
+    color: #333 !important
+    p
+      color: #333 !important
+    h4
+      color: #333 !important
+    .laravel-img, .tailwind-img, .vuejs-img
+      top: -70px 
+      z-index: -1 
+      left: -30px

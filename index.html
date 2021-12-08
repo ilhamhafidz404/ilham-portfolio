@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;600&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="public/css/tailwind.css" />
     <link rel="stylesheet" href="public/css/app.css " />
   </head>
-  <body class="mybg-gray">
+  <body class="mybg-gray text-gray-800">
+    <!-- ------------------------------Navbar----------------------- -->
     <div
       id="navbarToggler"
       class="
@@ -41,6 +48,8 @@
         />
       </svg>
     </div>
+
+    <!-- ------------------------------Header----------------------- -->
     <div class="container mx-auto">
       <header class="myfont-montserrat lg:px-8 px-0 pt-32">
         <div class="grid md:grid-cols-2 grid-cols-1 lg:gap-4 gap-0">
@@ -88,6 +97,112 @@
           </div>
         </div>
       </header>
+    </div>
+
+    <!-- ------------------------------Skill----------------------- -->
+    <div id="skill" class="mt-32 container mx-auto">
+      <section class="text-center">
+        <h2
+          id="skillTitle"
+          class="
+            text-7xl
+            myfont-montserrat
+            tracking-widest
+            font-extrabold
+            relative
+            inline-block
+          "
+        >
+          SKILL
+        </h2>
+      </section>
+
+      <!-- SKILL CARD -->
+      <section
+        class="
+          grid
+          lg:grid-cols-3
+          md:grid-cols-2
+          grid-cols-1
+          gap-20
+          mt-20
+          lg:px-28
+          md:px-20
+          px-12
+        "
+      >
+        <div
+          class="
+            card
+            border
+            p-5
+            rounded-md
+            laravel-card
+            bg-red-500
+            relative
+            transition
+            duration-500
+          "
+        >
+          <img
+            src="public/img/logo/laravel.svg"
+            alt="laravel-skill"
+            class="w-28 absolute laravel-img"
+          />
+          <h4 class="text-2xl text-gray-50">Laravel</h4>
+          <p class="mt-4 text-gray-200 myfont-poppins font-light text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nemo
+            facere, sit nisi consectetur odit deserunt veniam voluptate
+          </p>
+        </div>
+        <div
+          class="
+            card
+            border
+            p-5
+            rounded-md
+            tailwind-card
+            relative
+            transition
+            duration-500
+          "
+        >
+          <img
+            src="public/img/logo/tailwind.svg"
+            alt="tailwind-skill"
+            class="w-28 absolute tailwind-img"
+          />
+          <h4 class="text-2xl text-gray-50">TailwindCSS</h4>
+          <p class="mt-4 text-gray-200 myfont-poppins font-light text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nemo
+            facere, sit nisi consectetur odit deserunt veniam voluptate
+          </p>
+        </div>
+        <div
+          class="
+            card
+            border
+            p-5
+            rounded-md
+            vuejs-card
+            bg-red-500
+            relative
+            transition
+            duration-500
+          "
+        >
+          <img
+            src="public/img/logo/vuejs.svg"
+            alt="vuejs-skill"
+            class="w-28 absolute vuejs-img"
+          />
+          <h4 class="text-2xl text-gray-50">VueJS</h4>
+          <p class="mt-4 text-gray-200 myfont-poppins font-light text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nemo
+            facere, sit nisi consectetur odit deserunt veniam voluptate
+          </p>
+        </div>
+      </section>
     </div>
   </body>
 </html>

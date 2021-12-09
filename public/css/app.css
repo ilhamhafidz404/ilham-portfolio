@@ -21,6 +21,17 @@
   z-index: -1;
 }
 
+#projectTitle::before {
+  content: 'PROJECTS';
+  color: transparent;
+  position: absolute;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #dbcffd;
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+
 .card.laravel-card:hover {
   background-color: rgba(239, 68, 68, 0.1);
 }
@@ -104,7 +115,7 @@
   color: #dcd0fc;
 }
 
-.hireme-button:hover {
+.hoverprimary-button:hover {
   background-color: #5924ed;
   color: white;
 }

@@ -16,37 +16,55 @@
   </head>
   <body class="mybg-gray text-gray-800">
     <!-- ------------------------------Navbar----------------------- -->
-    <div
-      id="navbarToggler"
-      class="
-        fixed
-        right-0
-        top-0
-        md:m-8
-        m-3
-        text-white
-        mybg-primary
-        md:p-3
-        p-1
-        cursor-pointer
-        hover:opacity-80
-        rounded-sm
-      "
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
+
+    <div x-data="{ open: false }">
+      <!-- togler -->
+      <button
+        @click="open = ! open"
+        id="navbarToggler"
+        class="
+          fixed
+          right-0
+          top-0
+          md:m-8
+          m-3
+          text-white
+          mybg-primary
+          md:p-3
+          p-1
+          cursor-pointer
+          hover:opacity-80
+          rounded-sm
+        "
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16m-7 6h7"
-        />
-      </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+      <div x-show="open">
+        <div
+          class="overlay fixed top-0 left-0 right-0 bottom-0 z-40"
+          style="background-color: rgba(0, 0, 0, 0.3)"
+        ></div>
+        <nav
+          style="background-color: #0d081a"
+          class="fixed top-0 bottom-0 w-96 right-0 z-50"
+          @click.away="open = false"
+        >
+          <h1>ug</h1>
+        </nav>
+      </div>
     </div>
 
     <!-- ------------------------------Header----------------------- -->
@@ -212,6 +230,7 @@
                       w-full
                       md:w-56 md:mt-0
                       mt-5
+                      text-center
                     "
                   >
                     <svg
@@ -241,7 +260,7 @@
                       px-8
                       text-white
                       myfont-roboto-mono
-                      hireme-button
+                      hoverprimary-button
                       md:w-40
                       text-center
                       w-full
@@ -364,5 +383,285 @@
         </div>
       </section>
     </div>
+
+    <!-- ------------------------------PROJECT----------------------- -->
+    <div id="project" class="mt-32 container mx-auto lg:px-52 md:px-0">
+      <section class="text-center">
+        <h2
+          id="projectTitle"
+          class="
+            sm:text-7xl
+            text-5xl
+            myfont-montserrat
+            tracking-widest
+            font-extrabold
+            relative
+            inline-block
+          "
+        >
+          PROJECTS
+        </h2>
+      </section>
+
+      <!-- card -->
+      <section id="projectCard" class="mt-20 px-3">
+        <!-- project 1 -->
+        <div class="item sm:flex block">
+          <div
+            class="
+              flex
+              justify-center
+              w-80
+              rounded-xl
+              bg-cover bg-center
+              overflow-hidden
+              relative
+              sm:mx-0
+              mx-auto
+            "
+            style="z-index: -1"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                top-0
+                left-0
+                bottom-0
+                right-0
+                mybg-primary
+                opacity-30
+              "
+            ></div>
+            <img src="public/img/project-1.jpg" alt="" class="w-full h-full" />
+          </div>
+          <div
+            class="
+              card
+              flex
+              items-center
+              sm:w-2/3
+              w-full
+              z-10
+              sm:-ml-20
+              mx-0
+              sm:mt-0
+              -mt-16
+            "
+          >
+            <div
+              class="mybg-gray p-5 rounded-md"
+              style="box-shadow: 0 0 12px rgba(91, 38, 237, 0.6)"
+            >
+              <h1
+                class="
+                  mytext-primary
+                  text-3xl
+                  myfont-montserrat
+                  font-bold
+                  tracking-wide
+                "
+              >
+                SMART IDUKA
+              </h1>
+              <h6 class="text-sm text-gray-800 myfont-poppins">
+                Web tempat kalian menemukan pekerjaan
+              </h6>
+              <p class="mt-5 text-gray-600 myfont-roboto-mono text-sm">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                dicta saepe debitis, a ad minus quis possimus maiores
+                repudiandae, dolores voluptas ratione, corrupti magni molestiae
+                est! Doloremque rerum cumque suscipit.
+              </p>
+              <div class="sm:flex block mt-10">
+                <a
+                  href=""
+                  class="
+                    mybg-primary
+                    py-1
+                    px-10
+                    rounded-3xl
+                    text-white
+                    myfont-roboto-mono
+                    hover:opacity-80
+                    flex
+                    sm:mx-0
+                    mx-10
+                    items-center
+                    justify-center
+                  "
+                >
+                  See in Github
+                </a>
+                <a
+                  href=""
+                  class="
+                    py-1
+                    px-5
+                    rounded-3xl
+                    mytext-primary
+                    sm:mx-5
+                    mx-10
+                    flex
+                    border-2
+                    myborder-primary
+                    myfont-roboto-mono
+                    hoverprimary-button
+                    sm:mt-0
+                    mt-5
+                    justify-center
+                  "
+                >
+                  Preview
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- project 2 -->
+        <div class="item flex sm:flex-row flex-col-reverse mt-32">
+          <div
+            class="
+              card
+              flex
+              items-center
+              sm:w-2/3
+              w-full
+              z-10
+              sm:-mr-20
+              mx-0
+              sm:mt-0
+              -mt-16
+            "
+          >
+            <div
+              class="mybg-gray p-5 rounded-md"
+              style="box-shadow: 0 0 12px rgba(91, 38, 237, 0.6)"
+            >
+              <h1
+                class="
+                  mytext-primary
+                  text-3xl
+                  myfont-montserrat
+                  font-bold
+                  tracking-wide
+                "
+              >
+                SMART IDUKA
+              </h1>
+              <h6 class="text-sm text-gray-800 myfont-poppins">
+                Web tempat kalian menemukan pekerjaan
+              </h6>
+              <p class="mt-5 text-gray-600 myfont-roboto-mono text-sm">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
+                dicta saepe debitis, a ad minus quis possimus maiores
+                repudiandae, dolores voluptas ratione, corrupti magni molestiae
+                est! Doloremque rerum cumque suscipit.
+              </p>
+              <div class="sm:flex block mt-10">
+                <a
+                  href=""
+                  class="
+                    mybg-primary
+                    py-1
+                    px-10
+                    rounded-3xl
+                    text-white
+                    myfont-roboto-mono
+                    hover:opacity-80
+                    flex
+                    sm:mx-0
+                    mx-10
+                    justify-center
+                  "
+                >
+                  See in Github
+                </a>
+                <a
+                  href=""
+                  class="
+                    py-1
+                    px-5
+                    rounded-3xl
+                    mytext-primary
+                    sm:mx-5
+                    mx-10
+                    flex
+                    border-2
+                    myborder-primary
+                    myfont-roboto-mono
+                    hoverprimary-button
+                    sm:mt-0
+                    mt-5
+                    justify-center
+                  "
+                >
+                  Preview
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 ml-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              flex
+              justify-center
+              w-80
+              rounded-xl
+              bg-cover bg-center
+              overflow-hidden
+              relative
+              sm:mx-0
+              mx-auto
+            "
+            style="z-index: -1"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                top-0
+                left-0
+                bottom-0
+                right-0
+                mybg-primary
+                opacity-30
+              "
+            ></div>
+            <img src="public/img/project-1.jpg" alt="" class="w-full h-full" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="public/js/alphine.js"></script>
   </body>
 </html>

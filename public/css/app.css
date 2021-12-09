@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200300;400;500;600;700;800;900");
-#skillTitle::before {
-  content: 'SKILL';
+#skillTitle::before, #aboutTitle::before, #projectTitle::before, #statTitle::before {
   color: transparent;
   position: absolute;
   -webkit-text-stroke-width: 2px;
@@ -8,28 +7,22 @@
   bottom: -20px;
   right: -20px;
   z-index: -1;
+}
+
+#skillTitle::before {
+  content: 'SKILL';
 }
 
 #aboutTitle::before {
   content: 'ABOUT';
-  color: transparent;
-  position: absolute;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #dbcffd;
-  bottom: -20px;
-  right: -20px;
-  z-index: -1;
 }
 
 #projectTitle::before {
   content: 'PROJECTS';
-  color: transparent;
-  position: absolute;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #dbcffd;
-  bottom: -20px;
-  right: -20px;
-  z-index: -1;
+}
+
+#statTitle::before {
+  content: 'STATS';
 }
 
 .card.laravel-card:hover {

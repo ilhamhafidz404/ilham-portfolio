@@ -9,33 +9,22 @@ $shadowPrimary: #dbcffd
   transition: 0.5s
   
 
+#skillTitle::before, #aboutTitle::before, #projectTitle::before, #statTitle::before
+  color: transparent
+  position: absolute
+  -webkit-text-stroke-width: 2px
+  -webkit-text-stroke-color: $shadowPrimary
+  bottom: -20px
+  right: -20px
+  z-index: -1
 #skillTitle::before
   content: 'SKILL'
-  color: transparent
-  position: absolute
-  -webkit-text-stroke-width: 2px
-  -webkit-text-stroke-color: $shadowPrimary
-  bottom: -20px
-  right: -20px
-  z-index: -1
 #aboutTitle::before
   content: 'ABOUT'
-  color: transparent
-  position: absolute
-  -webkit-text-stroke-width: 2px
-  -webkit-text-stroke-color: $shadowPrimary
-  bottom: -20px
-  right: -20px
-  z-index: -1
 #projectTitle::before
   content: 'PROJECTS'
-  color: transparent
-  position: absolute
-  -webkit-text-stroke-width: 2px
-  -webkit-text-stroke-color: $shadowPrimary
-  bottom: -20px
-  right: -20px
-  z-index: -1
+#statTitle::before
+  content: 'STATS'
 
 .card
   &.laravel-card

@@ -31902,6 +31902,16 @@ video {
   border-color: #5924ed;
 }
 
+/* primary dark */
+
+.mybg-darkprimary {
+  background-color: #311580;
+}
+
+.mybg-extradarkprimary {
+  background-color: #221052;
+}
+
 /* Font */
 
 .myfont-montserrat {

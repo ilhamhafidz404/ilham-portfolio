@@ -9,7 +9,7 @@ $shadowPrimary: #dbcffd
   transition: 0.5s
   
 
-#skillTitle::before, #aboutTitle::before, #projectTitle::before, #statTitle::before
+#skillTitle::before, #aboutTitle::before, #projectTitle::before, #statTitle::before, //#letsTitle::before
   color: transparent
   position: absolute
   -webkit-text-stroke-width: 2px
@@ -25,23 +25,46 @@ $shadowPrimary: #dbcffd
   content: 'PROJECTS'
 #statTitle::before
   content: 'STATS'
+// #letsTitle::before
+//   content: 'LETS BUILD SHOMETHING AWESOME'
+
+#letsTitle::after
+  content: ''
+  width: 200px
+  height: 7px
+  border-radius: 20px
+  background-color:  #5924ed
+  display: block
+  margin: 5px auto
 
 .card
   &.laravel-card
     &:hover
       background-color: rgba(239, 68, 68, 0.1)
+      span
+        &.mix
+          color: #294ba5
+        &.livewire
+          color: #fb70a9
     .laravel-img
       @include cardImg_onHover()
   &.tailwind-card
     background-color: #06b6d4
     &:hover
       background-color: rgba(6, 182, 212, 0.1)
+      span
+        &.materialize
+          color: #ee6e73
+        &.bootstrap
+          color: #7952b3
     .tailwind-img
       @include cardImg_onHover()
   &.vuejs-card
     background-color: #41b883
     &:hover
       background-color: rgba(65, 184, 131, 0.1)
+      span.js
+        color: #efd81d
     .vuejs-img
       @include cardImg_onHover()
   &:hover
@@ -74,3 +97,16 @@ $shadowPrimary: #dbcffd
 .hoverprimary-button:hover
   background-color: #5924ed
   color: white
+
+.facebook:hover
+  background-color: #1873eb
+.twitter:hover
+  background-color: #009ded
+.youtube:hover
+  background-color: #f70000
+.gmail:hover
+  background-color: #e34133
+.instagram:hover
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)   
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) 

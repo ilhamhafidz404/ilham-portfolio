@@ -63,10 +63,32 @@
         ></div>
         <nav
           style="background-color: #0d081a"
-          class="fixed top-0 bottom-0 w-96 right-0 z-50"
+          class="
+            fixed
+            top-0
+            bottom-0
+            md:w-96
+            w-72
+            right-0
+            z-50
+            flex
+            items-center
+            justify-center
+          "
           @click.away="open = false"
         >
-          <!-- <h1>ug</h1> -->
+          <h3
+            class="
+              text-gray-200 text-5xl
+              font-montserrat font-bold
+              transform
+              -rotate-90
+              tracking-widest
+              whitespace-nowrap
+            "
+          >
+            COMING SOON
+          </h3>
         </nav>
       </div>
     </div>
@@ -125,7 +147,11 @@
             <img
               src="public/img/ilham.jpeg"
               alt="ilhamhafidz"
-              class="rounded w-80 md:mt-0 mt-10"
+              class="rounded w-80 md:mt-0 mt-10 relative z-10"
+            />
+            <img
+              src="public/img/shapes/points3.png"
+              class="absolute w-32 bottom-0 right-24"
             />
           </div>
         </div>

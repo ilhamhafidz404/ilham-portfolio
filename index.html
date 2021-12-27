@@ -12,22 +12,6 @@
       rel="stylesheet"
     />
     <style>
-    /* .loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed
-    } */
-    /* .loader-wrapper {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    } */
     .loader {
       width: 30px;
       height: 30px;
@@ -35,7 +19,6 @@
       animation: loader 2s infinite ease;
     }
     .loader-inner {
-      
       animation: loader-inner 2s infinite ease-in;
     }
 
@@ -983,11 +966,9 @@
     <script src="public/js/alphine.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
-    </script>
-    <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
       document.querySelector('#darkModeToggler').addEventListener('click', () =>{
         const root =document.querySelector('#root').classList.toggle('dark')
       })

@@ -11,6 +11,50 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Palanquin:wght@300&family=Poppins:wght@200;300;600&family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
+    <style>
+    /* .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed
+    } */
+    /* .loader-wrapper {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    } */
+    .loader {
+      width: 30px;
+      height: 30px;
+      border: 4px solid #Fff;
+      animation: loader 2s infinite ease;
+    }
+    .loader-inner {
+      
+      animation: loader-inner 2s infinite ease-in;
+    }
+
+    @keyframes loader {
+      0% { transform: rotate(0deg);}
+      25% { transform: rotate(180deg);}
+      50% { transform: rotate(180deg);}
+      75% { transform: rotate(360deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    @keyframes loader-inner {
+      0% { height: 0%;}
+      25% { height: 0%;}
+      50% { height: 100%;}
+      75% { height: 100%;}
+      100% { height: 0%;}
+    }
+    </style>
     <script
       src="https://kit.fontawesome.com/bfdfedea1a.js"
       crossorigin="anonymous"
@@ -926,7 +970,23 @@
       🌗
     </div>
 
+
+    <div class="loading fixed flex align-center justify-center" style="z-index: 1000">
+      <img src="https://picsum.photos/300/300/?random" />
+    </div>
+    <div class="loader-wrapper flex fixed w-full h-full top-0 left-0 items-center justify-center" style="z-index: 1000; background-color: #242f3f;">
+      <span class="loader inline-block relative">
+        <span class="loader-inner align-top inline-block w-full bg-white"></span>
+      </span>
+    </div>
+
     <script src="public/js/alphine.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
     <script>
       document.querySelector('#darkModeToggler').addEventListener('click', () =>{
         const root =document.querySelector('#root').classList.toggle('dark')

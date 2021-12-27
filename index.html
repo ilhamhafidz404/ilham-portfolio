@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="" id="root">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="public/css/tailwind.css" />
     <link rel="stylesheet" href="public/css/app.css " />
   </head>
-  <body class="mybg-gray text-gray-800">
+  <body class="mybg-gray text-gray-800 dark:bg-gray-800">
     <!-- ------------------------------Navbar----------------------- -->
     <div x-data="{ open: false }">
       <!-- togler -->
@@ -113,12 +113,12 @@
                 Hello I am
               </h3>
               <h1
-                class="uppercase md:text-6xl text-4xl font-bold tracking-tight"
+                class="uppercase md:text-6xl text-4xl font-bold tracking-tight dark:text-gray-100"
               >
                 Ilham Hafidz
               </h1>
               <p
-                class="myfont-roboto-mono mt-7 text-sm md:text-base md:p-0 px-6"
+                class="myfont-roboto-mono mt-7 text-sm md:text-base md:p-0 px-6 dark:text-gray-200"
               >
                 Saya siap menjadi partner perusahaan dan agensi di Indonesia,
                 membangun situs web luar biasa fokus kuat pada desain responsif,
@@ -171,6 +171,7 @@
               font-extrabold
               relative
               inline-block
+              dark:text-white
             "
           >
             ABOUT
@@ -188,6 +189,7 @@
                 card-about
                 w-80
                 mx-auto
+                dark:bg-gray-800
               "
             >
               <p
@@ -195,6 +197,7 @@
                   m-5
                   text-center text-gray-600 text-about
                   myfont-montserrat
+                  dark:text-gray-100
                 "
               >
                 Pada saat SMK sudah mendapat 2 Juara pertama pada perlombaan Web
@@ -223,11 +226,12 @@
                   text-center
                   mt-2
                   myfont-poppins
+                  dark:text-gray-100
                 "
               >
                 Ilham Hafidz
               </h5>
-              <p class="text-center text-sm text-gray-500">CEO ALOPE</p>
+              <p class="text-center text-sm text-gray-500 dark:text-gray-100">CEO ALOPE</p>
             </div>
             <div class="col-span-2 flex items-center">
               <section
@@ -236,10 +240,10 @@
                 <h5 class="myfont-montserrat mytext-primary">
                   Hello Guys, I am Ilham Hafidz
                 </h5>
-                <h4 class="text-3xl font-bold tracking-wide myfont-montserrat">
+                <h4 class="text-3xl font-bold tracking-wide myfont-montserrat dark:text-gray-100">
                   FULLSTACK WEB DEVELOPER
                 </h4>
-                <p class="mt-5 text-gray-600 myfont-roboto-mono">
+                <p class="mt-5 text-gray-600 myfont-roboto-mono dark:text-gray-200">
                   Sudah beberapa project yang saya kerjakan secara individu
                   maupun tim. Tentunya saat saya membuat project individu
                   membuat saya bisa dan terbiasa untuk design frontend maupun
@@ -333,6 +337,7 @@
             font-extrabold
             relative
             inline-block
+            dark:text-white
           "
         >
           SKILL
@@ -449,6 +454,7 @@
             font-extrabold
             relative
             inline-block
+            dark:text-white
           "
         >
           PROJECTS
@@ -502,7 +508,7 @@
             "
           >
             <div
-              class="mybg-gray p-5 rounded-md"
+              class="mybg-gray dark:bg-gray-800 p-5 rounded-md"
               style="box-shadow: 0 0 12px rgba(91, 38, 237, 0.6)"
             >
               <h1
@@ -516,10 +522,10 @@
               >
                 SMART IDUKA
               </h1>
-              <h6 class="text-sm text-gray-800 myfont-poppins">
+              <h6 class="text-sm text-gray-800 myfont-poppins dark:text-gray-100">
                 Web tempat kalian menemukan pekerjaan
               </h6>
-              <p class="mt-5 text-gray-600 myfont-roboto-mono text-sm">
+              <p class="mt-5 text-gray-600 myfont-roboto-mono text-sm dark:text-gray-200">
                 Ini merupakan project tim pertama saya, dimana project ini saya
                 buat ketika sata mengikuti kompetisi KKSI SMART SCHOLL SMK
                 se-Indonesia 2020. Project ini dibuat sekitar 1.5 bulan dan
@@ -727,8 +733,8 @@
         px-5
         py-16
         bg-cover bg-center bg-fixed
+        relative
       "
-      style="background-image: url(public/img/bg.png)"
     >
       <section class="text-center">
         <h2
@@ -749,7 +755,7 @@
       </section>
 
       <!-- stat card -->
-      <section class="flex sm:flex-row flex-col w-full mt-20">
+      <section class="flex sm:flex-row flex-col w-full mt-20 relative">
         <div class="border-l-4 border-indigo-800 bg-white sm:w-1/3 w-full p-5">
           <h3 class="myfont-montserrat font-bold text-4xl text-indigo-800">
             12+
@@ -801,6 +807,7 @@
             relative
             inline-block
             text-gray-800
+            dark:text-white
           "
         >
           LETS BUILD SOMETHING AWESOME
@@ -818,6 +825,7 @@
             md:px-0
             px-3
             text-sm
+            dark:text-gray-200
           "
         >
           Bagaimana? apakah anda tertarik untuk membuat sesuatu yang luar biasa
@@ -912,6 +920,17 @@
         </h5>
       </div>
     </footer>
+
+
+    <div class="fixed md:right-5 md:bottom-5 bottom-2 right-2 bg-gray-800 dark:bg-white md:p-2 p-1  rounded-full text-xl cursor-pointer" id="darkModeToggler">
+      🌗
+    </div>
+
     <script src="public/js/alphine.js"></script>
+    <script>
+      document.querySelector('#darkModeToggler').addEventListener('click', () =>{
+        const root =document.querySelector('#root').classList.toggle('dark')
+      })
+    </script>
   </body>
 </html>

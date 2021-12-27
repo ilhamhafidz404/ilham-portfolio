@@ -27,6 +27,9 @@ $shadowPrimary: #dbcffd
   content: 'STATS'
 // #letsTitle::before
 //   content: 'LETS BUILD SHOMETHING AWESOME'
+.dark #skillTitle::before, .dark #aboutTitle::before, .dark #projectTitle::before, .dark #statTitle::before
+  -webkit-text-stroke-color: #7853dd
+    
 
 #letsTitle::after
   content: ''
@@ -78,6 +81,15 @@ $shadowPrimary: #dbcffd
       z-index: -1 
       left: -30px
 
+.dark
+  .card
+    &:hover
+      color: white !important
+      p
+        color: white !important
+      h4
+        color: white !important
+
 
 
 .ilham-circle-img
@@ -110,3 +122,22 @@ $shadowPrimary: #dbcffd
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)   
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) 
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) 
+
+
+
+
+// darkmode
+#stat
+  background-image: url(../img/bg.png)
+
+.dark
+  #stat
+    &::before
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      content: " "
+      background-color: #1f2937
+      opacity: 0.4

@@ -19,6 +19,7 @@
     "tailwindcss": "^2.2.19"
   },
   "dependencies": {
-    "alpinejs": "^3.7.0"
+    "alpinejs": "^3.7.0",
+    "lightbox2": "^2.11.3"
   }
 }

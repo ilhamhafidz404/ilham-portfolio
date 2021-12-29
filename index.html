@@ -11,39 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Palanquin:wght@300&family=Poppins:wght@200;300;600&family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <style>
-    .loader {
-      width: 30px;
-      height: 30px;
-      border: 4px solid #Fff;
-      animation: loader 2s infinite ease;
-    }
-    .loader-inner {
-      animation: loader-inner 2s infinite ease-in;
-    }
-
-    @keyframes loader {
-      0% { transform: rotate(0deg);}
-      25% { transform: rotate(180deg);}
-      50% { transform: rotate(180deg);}
-      75% { transform: rotate(360deg);}
-      100% { transform: rotate(360deg);}
-    }
-
-    @keyframes loader-inner {
-      0% { height: 0%;}
-      25% { height: 0%;}
-      50% { height: 100%;}
-      75% { height: 100%;}
-      100% { height: 0%;}
-    }
-    </style>
     <script
       src="https://kit.fontawesome.com/bfdfedea1a.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="public/css/tailwind.css" />
     <link rel="stylesheet" href="public/css/app.css " />
+    <link rel="stylesheet" href="public/css/lightbox.css " />
   </head>
   <body class="mybg-gray text-gray-800 dark:bg-gray-800">
     <!-- ------------------------------Navbar----------------------- -->
@@ -104,6 +78,38 @@
           "
           @click.away="open = false"
         >
+          <button
+            @click="open = ! open"
+            id="navbarToggler"
+            class="
+              absolute
+              right-0
+              top-0
+              md:m-8
+              m-3
+              text-white
+              mybg-primary
+              md:p-3
+              p-1
+              cursor-pointer
+              hover:opacity-80
+              rounded-sm
+              z-50
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
           <h3
             class="
               text-gray-200 text-5xl
@@ -140,12 +146,26 @@
                 Hello I am
               </h3>
               <h1
-                class="uppercase md:text-6xl text-4xl font-bold tracking-tight dark:text-gray-100"
+                class="
+                  uppercase
+                  md:text-6xl
+                  text-4xl
+                  font-bold
+                  tracking-tight
+                  dark:text-gray-100
+                "
               >
                 Ilham Hafidz
               </h1>
               <p
-                class="myfont-roboto-mono mt-7 text-sm md:text-base md:p-0 px-6 dark:text-gray-200"
+                class="
+                  myfont-roboto-mono
+                  mt-7
+                  text-sm
+                  md:text-base md:p-0
+                  px-6
+                  dark:text-gray-200
+                "
               >
                 Saya siap menjadi partner perusahaan dan agensi di Indonesia,
                 membangun situs web luar biasa fokus kuat pada desain responsif,
@@ -170,7 +190,9 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center justify-center md:w-1/2 w-full">
+          <div
+            class="flex items-center justify-center md:w-1/2 w-full relative"
+          >
             <img
               src="public/img/ilham.jpeg"
               alt="ilhamhafidz"
@@ -178,7 +200,7 @@
             />
             <img
               src="public/img/shapes/points3.png"
-              class="absolute w-32 bottom-0 right-24"
+              class="absolute w-32 -bottom-10 right-24"
             />
           </div>
         </div>
@@ -258,7 +280,9 @@
               >
                 Ilham Hafidz
               </h5>
-              <p class="text-center text-sm text-gray-500 dark:text-gray-100">CEO ALOPE</p>
+              <p class="text-center text-sm text-gray-500 dark:text-gray-100">
+                CEO ALOPE
+              </p>
             </div>
             <div class="col-span-2 flex items-center">
               <section
@@ -267,10 +291,25 @@
                 <h5 class="myfont-montserrat mytext-primary">
                   Hello Guys, I am Ilham Hafidz
                 </h5>
-                <h4 class="text-3xl font-bold tracking-wide myfont-montserrat dark:text-gray-100">
+                <h4
+                  class="
+                    text-3xl
+                    font-bold
+                    tracking-wide
+                    myfont-montserrat
+                    dark:text-gray-100
+                  "
+                >
                   FULLSTACK WEB DEVELOPER
                 </h4>
-                <p class="mt-5 text-gray-600 myfont-roboto-mono dark:text-gray-200">
+                <p
+                  class="
+                    mt-5
+                    text-gray-600
+                    myfont-roboto-mono
+                    dark:text-gray-200
+                  "
+                >
                   Sudah beberapa project yang saya kerjakan secara individu
                   maupun tim. Tentunya saat saya membuat project individu
                   membuat saya bisa dan terbiasa untuk design frontend maupun
@@ -549,10 +588,20 @@
               >
                 SMART IDUKA
               </h1>
-              <h6 class="text-sm text-gray-800 myfont-poppins dark:text-gray-100">
+              <h6
+                class="text-sm text-gray-800 myfont-poppins dark:text-gray-100"
+              >
                 Web tempat kalian menemukan pekerjaan
               </h6>
-              <p class="mt-5 text-gray-600 myfont-roboto-mono text-sm dark:text-gray-200">
+              <p
+                class="
+                  mt-5
+                  text-gray-600
+                  myfont-roboto-mono
+                  text-sm
+                  dark:text-gray-200
+                "
+              >
                 Ini merupakan project tim pertama saya, dimana project ini saya
                 buat ketika sata mengikuti kompetisi KKSI SMART SCHOLL SMK
                 se-Indonesia 2020. Project ini dibuat sekitar 1.5 bulan dan
@@ -621,7 +670,7 @@
         </div>
 
         <!-- project 2 -->
-        <!-- <div class="item flex sm:flex-row flex-col-reverse mt-32">
+        <div class="item flex sm:flex-row flex-col-reverse mt-32">
           <div
             class="
               card
@@ -637,7 +686,7 @@
             "
           >
             <div
-              class="mybg-gray p-5 rounded-md"
+              class="mybg-gray dark:bg-gray-800 p-5 rounded-md"
               style="box-shadow: 0 0 12px rgba(91, 38, 237, 0.6)"
             >
               <h1
@@ -651,10 +700,20 @@
               >
                 SMART IDUKA
               </h1>
-              <h6 class="text-sm text-gray-800 myfont-poppins">
+              <h6
+                class="text-sm text-gray-800 myfont-poppins dark:text-gray-100"
+              >
                 Web tempat kalian menemukan pekerjaan
               </h6>
-              <p class="mt-5 text-gray-600 myfont-roboto-mono text-sm">
+              <p
+                class="
+                  mt-5
+                  text-gray-600
+                  myfont-roboto-mono
+                  text-sm
+                  dark:text-gray-200
+                "
+              >
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos
                 dicta saepe debitis, a ad minus quis possimus maiores
                 repudiandae, dolores voluptas ratione, corrupti magni molestiae
@@ -745,7 +804,7 @@
             ></div>
             <img src="public/img/project-1.jpg" alt="" class="w-full h-full" />
           </div>
-        </div> -->
+        </div>
       </section>
     </div>
 
@@ -820,8 +879,410 @@
       </section>
     </div>
 
+    <!-- ------------------------------GALERY----------------------- -->
+    <div
+      id="galery"
+      class="container mx-auto mt-32 lg:px-44 md:px-10 px-5 py-16"
+    >
+      <section class="text-center">
+        <h2
+          id="galeryTitle"
+          class="
+            sm:text-6xl
+            text-5xl
+            myfont-montserrat
+            tracking-widest
+            font-extrabold
+            relative
+            inline-block
+            text-gray-800
+            dark:text-white
+          "
+        >
+          GALERY
+        </h2>
+      </section>
+
+      <section class="grid lg:grid-cols-3 grid-cols-2 mt-16 gap-2">
+        <!-- galeri 1 -->
+        <div
+          class="
+            img-galery
+            cursor-pointer
+            w-full
+            h-48
+            bg-cover bg-center
+            relative
+            transform
+            transition
+            ease-in-out
+            delay-75
+          "
+          style="background-image: url(public/img/ilham.jpeg)"
+        >
+          <a
+            href="public/img/ilham.jpeg"
+            data-lightbox="galery"
+            data-title="My caption"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                w-full
+                h-full
+                invisible
+                transition
+                ease-in-out
+                delay-150
+                flex
+                justify-center
+                items-center
+              "
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- galeri 2 -->
+        <div
+          class="
+            img-galery
+            cursor-pointer
+            w-full
+            h-48
+            bg-cover bg-center
+            relative
+            transform
+            transition
+            ease-in-out
+            delay-75
+          "
+          style="background-image: url(public/img/ilham.jpeg)"
+        >
+          <a
+            href="public/img/ilham.jpeg"
+            data-lightbox="galery"
+            data-title="My caption"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                w-full
+                h-full
+                invisible
+                transition
+                ease-in-out
+                delay-150
+                flex
+                justify-center
+                items-center
+              "
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- galeri 3 -->
+        <div
+          class="
+            img-galery
+            cursor-pointer
+            w-full
+            h-48
+            bg-cover bg-center
+            relative
+            transform
+            transition
+            ease-in-out
+            delay-75
+            lg:block
+            hidden
+          "
+          style="background-image: url(public/img/ilham.jpeg)"
+        >
+          <a
+            href="public/img/ilham.jpeg"
+            data-lightbox="galery"
+            data-title="My caption"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                w-full
+                h-full
+                invisible
+                transition
+                ease-in-out
+                delay-150
+                flex
+                justify-center
+                items-center
+              "
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- galeri 4 -->
+        <div
+          class="
+            w-full
+            h-48
+            bg-cover bg-center
+            col-span-2
+            img-galery
+            cursor-pointer
+            relative
+            transform
+            transition
+            ease-in-out
+            delay-75
+          "
+          style="background-image: url(public/img/ilham.jpeg)"
+        >
+          <a
+            href="public/img/ilham.jpeg"
+            data-lightbox="galery"
+            data-title="My caption"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                w-full
+                h-full
+                invisible
+                transition
+                ease-in-out
+                delay-150
+                flex
+                justify-center
+                items-center
+              "
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- galeri 5 -->
+        <div
+          class="
+            w-full
+            h-full
+            bg-cover bg-center
+            row-span-2
+            img-galery
+            cursor-pointer
+            relative
+            transform
+            transition
+            ease-in-out
+            delay-75
+          "
+          style="background-image: url(public/img/ilham.jpeg)"
+        >
+          <a
+            href="public/img/ilham.jpeg"
+            data-lightbox="galery"
+            data-title="My caption"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                w-full
+                h-full
+                invisible
+                transition
+                ease-in-out
+                delay-150
+                flex
+                justify-center
+                items-center
+              "
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- galeri 6 -->
+        <div
+          class="
+            img-galery
+            cursor-pointer
+            w-full
+            h-48
+            bg-cover bg-center
+            relative
+            transform
+            transition
+            ease-in-out
+            delay-75
+          "
+          style="background-image: url(public/img/ilham.jpeg)"
+        >
+          <a
+            href="public/img/ilham.jpeg"
+            data-lightbox="galery"
+            data-title="My caption"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                w-full
+                h-full
+                invisible
+                transition
+                ease-in-out
+                delay-150
+                flex
+                justify-center
+                items-center
+              "
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- galeri 7 -->
+        <div
+          class="
+            img-galery
+            cursor-pointer
+            w-full
+            h-48
+            bg-cover bg-center
+            relative
+            transform
+            transition
+            ease-in-out
+            delay-75
+          "
+          style="background-image: url(public/img/ilham.jpeg)"
+        >
+          <a
+            href="public/img/ilham.jpeg"
+            data-lightbox="galery"
+            data-title="My caption"
+          >
+            <div
+              class="
+                overlay
+                absolute
+                w-full
+                h-full
+                invisible
+                transition
+                ease-in-out
+                delay-150
+                flex
+                justify-center
+                items-center
+              "
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
     <!-- ------------------------------Lets Build Something----------------------- -->
-    <div id="lets" class="mt-20 container mx-auto lg:px-44 md:px-4 px-0 py-16">
+    <div id="lets" class="mt-10 container mx-auto lg:px-44 md:px-4 px-0 py-16">
       <section class="text-center">
         <h2
           id="letsTitle"
@@ -862,6 +1323,106 @@
       </section>
     </div>
 
+    <!-- ------------------------------SUPPORT ME----------------------- -->
+    <div id="lets" class="container mx-auto lg:px-52 px-4">
+      <section class="text-center">
+        <h2
+          class="
+            sm:text-3xl
+            text-2xl
+            myfont-montserrat
+            tracking-widest
+            font-extrabold
+            relative
+            inline-block
+            text-gray-800
+            dark:text-white
+          "
+        >
+          SUPPORT ME
+        </h2>
+      </section>
+      <section
+        class="
+          mt-10
+          grid
+          md:grid-cols-3
+          sm:grid-cols-2
+          grid-cols-2
+          sm:gap-10
+          gap-5
+          justify-center
+        "
+      >
+        <div class="youtube-box tilt-box sm:col-span-1 col-span-2">
+          <!-- <h4 class="keyboard-name">Keychron K2</h4> -->
+          <img
+            src="public/img/tilt/yt.png"
+            alt="Keychron K3"
+            class="tilt-img"
+          />
+          <a
+            href="https://www.youtube.com/channel/UCR0Gz3-3zuqQuuePqNq9-JA"
+            target="_blank"
+            class="
+              bg-white
+              rounded-xl
+              px-5
+              myfont-montserrat
+              keyboard-detail-button
+              text-sm
+            "
+          >
+            Subscribe
+          </a>
+        </div>
+
+        <div class="coffe-box tilt-box">
+          <!-- <h4 class="keyboard-name">Keychron K2</h4> -->
+          <img
+            src="public/img/tilt/coffe.png"
+            alt="Keychron K3"
+            class="tilt-img"
+          />
+          <a
+            href="#"
+            class="
+              bg-white
+              rounded-xl
+              px-5
+              myfont-montserrat
+              keyboard-detail-button
+              text-sm
+            "
+          >
+            Donate
+          </a>
+        </div>
+
+        <div class="patreon-box tilt-box">
+          <!-- <h4 class="keyboard-name">Keychron K2</h4> -->
+          <img
+            src="public/img/tilt/patreon2.png"
+            alt="Keychron K3"
+            class="tilt-img w-16"
+          />
+          <a
+            href="#"
+            class="
+              bg-white
+              rounded-xl
+              px-5
+              myfont-montserrat
+              keyboard-detail-button
+              text-sm
+            "
+          >
+            Buy Project
+          </a>
+        </div>
+      </section>
+    </div>
+
     <footer class="mybg-darkprimary mt-28 text-white">
       <div class="top lg:px-24 sm:px-8 px-5 py-10 flex md:flex-row flex-col">
         <div class="md:w-1/3 w-full sm:text-left text-center">
@@ -895,31 +1456,50 @@
             </h3>
             <ul class="mt-10">
               <li class="mb-3 facebook px-3 rounded-md">
-                <a href="" class="text-base myfont-roboto-mono">
+                <a
+                  href="https://www.facebook.com/ilham.hafidz.374/"
+                  target="_blank"
+                  class="text-base myfont-roboto-mono"
+                >
                   <i class="fab fa-facebook"></i>
                   Facebook
                 </a>
               </li>
               <li class="mb-3 twitter px-3 rounded-md">
-                <a href="" class="text-base myfont-roboto-mono">
+                <a
+                  href="https://twitter.com/xxhamz_"
+                  target="_blank"
+                  class="text-base myfont-roboto-mono"
+                >
                   <i class="fab fa-twitter"></i>
                   Twitter
                 </a>
               </li>
               <li class="mb-3 instagram px-3 rounded-md">
-                <a href="" class="text-base myfont-roboto-mono">
+                <a
+                  href="https://www.instagram.com/xxhamz_/"
+                  target="_blank"
+                  class="text-base myfont-roboto-mono"
+                >
                   <i class="fab fa-instagram"></i>
                   Instagram
                 </a>
               </li>
               <li class="mb-3 youtube px-3 rounded-md">
-                <a href="" class="text-base myfont-roboto-mono">
+                <a
+                  href="https://www.youtube.com/channel/UCR0Gz3-3zuqQuuePqNq9-JA"
+                  target="_blank"
+                  class="text-base myfont-roboto-mono"
+                >
                   <i class="fab fa-youtube"></i>
                   Youtube
                 </a>
               </li>
               <li class="mb-3 gmail px-3 rounded-md">
-                <a href="" class="text-base myfont-roboto-mono">
+                <a
+                  href="mailto:ilhammhafidzz@gmail.com"
+                  class="text-base myfont-roboto-mono"
+                >
                   <i class="fas fa-envelope"></i>
                   Gmail
                 </a>
@@ -948,30 +1528,88 @@
       </div>
     </footer>
 
-
-    <div class="fixed md:right-5 md:bottom-5 bottom-2 right-2 bg-gray-800 dark:bg-white md:p-2 p-1  rounded-full text-xl cursor-pointer" id="darkModeToggler">
+    <div
+      class="
+        fixed
+        md:right-5 md:bottom-5
+        bottom-2
+        right-2
+        bg-gray-800
+        dark:bg-white
+        md:p-2
+        p-1
+        rounded-full
+        text-xl
+        cursor-pointer
+        z-30
+      "
+      id="darkModeToggler"
+    >
       🌗
     </div>
 
-
-    <div class="loading fixed flex align-center justify-center" style="z-index: 1000">
+    <div
+      class="loading fixed flex align-center justify-center"
+      style="z-index: 1000"
+    >
       <img src="https://picsum.photos/300/300/?random" />
     </div>
-    <div class="loader-wrapper flex fixed w-full h-full top-0 left-0 items-center justify-center" style="z-index: 1000; background-color: #242f3f;">
+    <div
+      class="
+        loader-wrapper
+        flex
+        fixed
+        w-full
+        h-full
+        top-0
+        left-0
+        items-center
+        justify-center
+      "
+      style="z-index: 1000; background-color: #242f3f"
+    >
       <span class="loader inline-block relative">
-        <span class="loader-inner align-top inline-block w-full bg-white"></span>
+        <span
+          class="loader-inner align-top inline-block w-full bg-white"
+        ></span>
       </span>
     </div>
 
     <script src="public/js/alphine.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="public/js/lightbox-plus-jquery.js"></script>
+    <script src="public/js/tilt.js"></script>
+    <!--  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    -->
+
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".tilt-box"), {
+        max: 20,
+        speed: 1000,
+        glare: true,
+      });
+    </script>
+
     <script>
-      $(window).on("load",function(){
+      $(window).on("load", function () {
         $(".loader-wrapper").fadeOut("slow");
       });
-      document.querySelector('#darkModeToggler').addEventListener('click', () =>{
-        const root =document.querySelector('#root').classList.toggle('dark')
-      })
+
+      lightbox.option({
+        resizeDuration: 500,
+        wrapAround: true,
+        disableScrolling: true,
+        albumLabel: "Gambar %1 dari %2",
+      });
+
+      document
+        .querySelector("#darkModeToggler")
+        .addEventListener("click", () => {
+          const root = document.querySelector("#root").classList.toggle("dark");
+        });
     </script>
   </body>
 </html>

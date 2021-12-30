@@ -226,4 +226,21 @@ $shadowPrimary: #dbcffd
 
 .tilt-box:hover .tilt-img
   transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2)
+
+
+html
+  scroll-behavior: smooth
+nav
+  height: 200px
+  .nav-content span a svg 
+    transform: rotate(calc(var(--i) * (360deg / -8)))
+  .toggle-btn
+    transform: rotate(-225deg)
+    transition: 0.5s
+    
+  &.open 
+    .nav-content span
+      transform: rotate(calc(var(--i) * (360deg / 8))) translateY(70px)
+    .toggle-btn
+      transform: rotate(0deg)
  

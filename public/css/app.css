@@ -337,4 +337,34 @@
   -webkit-transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
           transform: translate3d(-50%, -52%, 100px) rotate(5deg) scale(1.2);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  height: 200px;
+}
+
+nav .nav-content span a svg {
+  -webkit-transform: rotate(calc(var(--i) * (360deg / -8)));
+          transform: rotate(calc(var(--i) * (360deg / -8)));
+}
+
+nav .toggle-btn {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav.open .nav-content span {
+  -webkit-transform: rotate(calc(var(--i) * (360deg / 8))) translateY(70px);
+          transform: rotate(calc(var(--i) * (360deg / 8))) translateY(70px);
+}
+
+nav.open .toggle-btn {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
 /*# sourceMappingURL=app.css.map */

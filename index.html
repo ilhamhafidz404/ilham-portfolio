@@ -1589,7 +1589,7 @@
           justify-center
         "
       >
-        <div class="youtube-box tilt-box sm:col-span-1 col-span-2">
+        <div class="youtube-box sm:tilt-box sm:col-span-1 col-span-2">
           <!-- <h4 class="keyboard-name">Keychron K2</h4> -->
           <img
             src="public/img/tilt/yt.png"
@@ -1612,7 +1612,7 @@
           </a>
         </div>
 
-        <div class="coffe-box tilt-box">
+        <div class="coffe-box sm:tilt-box">
           <!-- <h4 class="keyboard-name">Keychron K2</h4> -->
           <img
             src="public/img/tilt/coffe.png"
@@ -1634,7 +1634,7 @@
           </a>
         </div>
 
-        <div class="patreon-box tilt-box">
+        <div class="patreon-box sm:tilt-box">
           <!-- <h4 class="keyboard-name">Keychron K2</h4> -->
           <img
             src="public/img/tilt/patreon2.png"
@@ -1650,6 +1650,7 @@
               myfont-montserrat
               keyboard-detail-button
               text-sm
+              whitespace-nowrap
             "
           >
             Buy Project
@@ -1783,7 +1784,7 @@
       🌗
     </div>
 
-    <div
+    <!-- <div
       class="loading fixed flex align-center justify-center"
       style="z-index: 1000"
     >
@@ -1808,7 +1809,7 @@
           class="loader-inner align-top inline-block w-full bg-white"
         ></span>
       </span>
-    </div>
+    </div> -->
 
     <script src="public/js/alphine.js"></script>
     <script src="public/js/lightbox-plus-jquery.js"></script>
@@ -1831,9 +1832,10 @@
         speed: 1000,
         glare: true,
       });
-      $(window).on("load", function () {
-        $(".loader-wrapper").fadeOut("slow");
-      });
+
+      // $(window).on("load", function () {
+      //   $(".loader-wrapper").fadeOut("slow");
+      // });
 
       lightbox.option({
         resizeDuration: 500,

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/tailwind.css" />
+    <style>
+      nav {
+        height: 200px;
+        top: 300px;
+      }
+      .nav-content {
+        transform: rotate(-45deg);
+      }
+      .nav-content span {
+        transition: all 0.6s ease;
+      }
+      nav.open .nav-content span {
+        transform: rotate(calc(var(--i) * (360deg / 8))) translateY(80px);
+      }
+
+      .nav-content span a {
+        transform: rotate(45deg);
+      }
+      .nav-content span a svg {
+        transform: rotate(calc(var(--i) * (360deg / -8)));
+      }
+      nav .toggle-btn {
+        transform: rotate(-225deg);
+        transition: 0.5s;
+      }
+      nav.open .toggle-btn {
+        transform: rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="absolute right-10 bg-red-500 flex items-center">
+      <div class="nav-content flex items-center justify-center">
+        <div
+          class="
+            toggle-btn
+            h-10
+            w-10
+            bg-white
+            flex
+            items-center
+            justify-center
+            shadow
+            rounded-full
+            z-50
+          "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+        </div>
+        <span class="absolute" style="--i: 1">
+          <a
+            href=""
+            class="
+              h-10
+              w-10
+              bg-white
+              flex
+              items-center
+              justify-center
+              shadow
+              rounded-full
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </span>
+        <span class="absolute" style="--i: 2">
+          <a
+            href=""
+            class="
+              h-10
+              w-10
+              bg-white
+              flex
+              items-center
+              justify-center
+              shadow
+              rounded-full
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+              />
+            </svg>
+          </a>
+        </span>
+        <span class="absolute" style="--i: 3">
+          <a
+            href=""
+            class="
+              h-10
+              w-10
+              bg-white
+              flex
+              items-center
+              justify-center
+              shadow
+              rounded-full
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+              />
+            </svg>
+          </a>
+        </span>
+        <span class="absolute" style="--i: 4">
+          <a
+            href=""
+            class="
+              h-10
+              w-10
+              bg-white
+              flex
+              items-center
+              justify-center
+              shadow
+              rounded-full
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+              />
+            </svg>
+          </a>
+        </span>
+        <span class="absolute" style="--i: 5">
+          <a
+            href=""
+            class="
+              h-10
+              w-10
+              bg-white
+              flex
+              items-center
+              justify-center
+              shadow
+              rounded-full
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+              />
+            </svg>
+          </a>
+        </span>
+      </div>
+    </nav>
+
+    <script>
+      const nav = document.querySelector("nav"),
+        toggleBtn = document.querySelector(".toggle-btn");
+
+      toggleBtn.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+
+      function onDrag({ movementY }) {
+        const navStyle = window.getComputedStyle(nav),
+          navTop = parseInt(navStyle.top),
+          navHeight = parseInt(navStyle.height),
+          windHeight = window.innerHeight;
+
+        nav.style.top = navTop > 0 ? `${navTop + movementY} px` : "1px";
+        if (navTop > windHeight - navHeight) {
+          nav.style.top = `${windHeight - navHeight}px`;
+        }
+      }
+
+      nav.addEventListener("mousedown", () => {
+        nav.addEventListener("mousemove", onDrag);
+      });
+      nav.addEventListener("mouseup", () => {
+        nav.removeEventListener("mousemove", onDrag);
+      });
+      nav.addEventListener("mouseleave", () => {
+        nav.removeEventListener("mousemove", onDrag);
+      });
+    </script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
 
 @layer utilities {
   .mybg-gray {
-    background-color: #efebfa;
+    background-color: rgba(214, 93, 38, 0.1);
   }
   .mytext-gray {
     color: #efebfa;
@@ -12,6 +12,13 @@
   /* Primary Color */
   .mybg-primary {
     background-color: #5924ed;
+    /* background-color: #d65d26; */
+  }
+  .mybg-orange {
+    background-color: #d65d26;
+  }
+  .mytext-orange {
+    color: #d65d26;
   }
   .mytext-primary {
     color: #5924ed;

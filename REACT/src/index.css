@@ -64,6 +64,14 @@
   .mytext-primary {
     color: #d65d26;
   }
+  .myborder-primary {
+    border-color: #d65d26;
+  }
+
+  .text-title-stroke {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #d65d26;
+  }
 }
 
 @layer base {

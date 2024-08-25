@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -15,6 +15,17 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+    },
+    textFillColor: (theme) => theme("borderColor"),
+    textStrokeColor: (theme) => theme("borderColor"),
+    textStrokeWidth: (theme) => theme("borderWidth"),
+    paintOrder: {
+      fsm: { paintOrder: "fill stroke markers" },
+      fms: { paintOrder: "fill markers stroke" },
+      sfm: { paintOrder: "stroke fill markers" },
+      smf: { paintOrder: "stroke markers fill" },
+      mfs: { paintOrder: "markers fill stroke" },
+      msf: { paintOrder: "markers stroke fill" },
     },
     extend: {
       colors: {
@@ -73,5 +84,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-text-fill-stroke"),
+  ],
+};

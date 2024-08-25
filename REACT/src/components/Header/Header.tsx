@@ -1,4 +1,6 @@
-import SparklesText from "../../@/components/magicui/sparkles-text";
+import SparklesText from "../../../@/components/magicui/sparkles-text";
+import Button from "../Button";
+import PhotoCard from "./PhotoCard";
 
 export default function Header() {
   return (
@@ -23,13 +25,10 @@ export default function Header() {
                 web kompleks.
               </p>
               <div className="mt-7">
-                <a
-                  href="https://github.com/ilhamhafidz404?tab=repositories"
-                  target="_blank"
-                  className="mybg-primary text-gray-100 px-10 py-3 rounded-3xl font-semibold hover:opacity-90 hover:shadow-md text-sm"
-                >
-                  Lihat Project Saya
-                </a>
+                <Button
+                  text="Lihat Projek Saya"
+                  target="https://github.com/ilhamhafidz404?tab=repositories"
+                />
 
                 {/* <ShinyButton
                     text="Lihat projek saya"
@@ -38,18 +37,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center md:w-1/2 w-full relative">
-            <div className="absolute rounded-xl mybg-primary block w-[350px] h-[320px]"></div>
-            <img
-              src="ilham.png"
-              alt="ilhamhafidz"
-              className="rounded md:mt-0 mt-10 relative z-10 w-[450px]"
-            />
-            {/* <img
-              src="public/img/shapes/points3.png"
-              className="absolute w-32 -bottom-10 right-24"
-            /> */}
-          </div>
+          <PhotoCard />
         </div>
       </header>
     </div>

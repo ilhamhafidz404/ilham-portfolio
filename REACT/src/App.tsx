@@ -1,17 +1,26 @@
 import { useState } from "react";
-// import "./App.css";
+
+// components
 import Header from "./components/Header/Header";
 import TitleSection from "./components/TitleSection";
 import QuoteCard from "./components/QuoteCard";
 import Button from "./components/Button";
+import ProjectCard from "./components/ProjectCard";
+
+// icon
 import DownloadIcon from "./components/Icons/Download";
 
+// data
+import dataProject from "../public/data/projects.json";
+
 function App() {
+  const [projects, _] = useState(dataProject);
+
   return (
     <main className="text-gray-800">
       <Header />
 
-      <TitleSection />
+      <TitleSection title="ABOUT" />
 
       <section className="container">
         <div className="grid grid-cols-3">
@@ -48,6 +57,22 @@ function App() {
             </section>
           </div>
         </div>
+      </section>
+
+      {/*  */}
+
+      <section className="container">
+        <TitleSection title="PROJECT" />
+
+        {projects.map((project, index) => (
+          <ProjectCard
+            order={index + 1}
+            title={project.title}
+            subtitle={project.subtitle}
+            description={project.description}
+            photoSource={project.photo}
+          />
+        ))}
       </section>
     </main>
   );

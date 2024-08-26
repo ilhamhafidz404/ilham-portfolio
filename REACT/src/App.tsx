@@ -74,6 +74,27 @@ function App() {
           />
         ))}
       </section>
+
+      {/*  */}
+
+      <footer className="mt-28 mybg-primary">
+        {/* <div className="flex items-center justify-center gap-20 py-10">
+          <div>
+            <h4 className="text-2xl font-semibold">
+              🚀LETS BUILD SOMETHING AWESOME
+            </h4>
+          </div>
+          <div>
+            <Button text="Learn More" target="" />
+          </div>
+        </div> */}
+        {/* <div className="mybg-primary top lg:px-24 sm:px-8 px-5 py-10 flex md:flex-row flex-col"></div> */}
+        <div className="mybg-primary py-5">
+          <h5 className="myfont-roboto-mono text-center text-white">
+            &copy; Copyright Ilham Hafidz
+          </h5>
+        </div>
+      </footer>
     </main>
   );
 }

@@ -16,6 +16,8 @@ import dataProject from "../public/data/projects.json";
 function App() {
   const [projects, _] = useState(dataProject);
 
+  const [projectCategory, setProjectCategory] = useState(1);
+
   return (
     <main className="text-gray-800">
       <Header />
@@ -33,7 +35,7 @@ function App() {
               <h4 className="text-3xl font-bold tracking-wide myfont-montserrat dark:text-gray-100">
                 FULLSTACK WEB DEVELOPER
               </h4>
-              <p className="mt-5 text-gray-600 myfont-roboto-mono dark:text-gray-200">
+              <p className="mt-5 text-gray-800 myfont-roboto-mono dark:text-gray-200">
                 Saya telah mengerjakan beberapa proyek, baik secara individu
                 maupun dalam tim. Ketika mengerjakan proyek individu, saya
                 terbiasa menangani desain frontend dan backend sebuah website.
@@ -64,15 +66,54 @@ function App() {
       <section className="container">
         <TitleSection title="PROJECT" />
 
-        {projects.map((project, index) => (
-          <ProjectCard
-            order={index + 1}
-            title={project.title}
-            subtitle={project.subtitle}
-            description={project.description}
-            photoSource={project.photo}
-          />
-        ))}
+        <div className="gap-5 flex justify-center">
+          <button
+            className={`relative mybg-primary hover:mybg-primary-hovered px-5 py-2 rounded text-white ${
+              projectCategory === 1
+                ? "after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse"
+                : ""
+            }`}
+            onClick={() => setProjectCategory(1)}
+          >
+            Competition
+          </button>
+
+          <button
+            className={`relative mybg-primary hover:mybg-primary-hovered px-5 py-2 rounded text-white ${
+              projectCategory === 2
+                ? "after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse"
+                : ""
+            }`}
+            onClick={() => setProjectCategory(2)}
+          >
+            Company
+          </button>
+          <button
+            className={`relative mybg-primary hover:mybg-primary-hovered px-5 py-2 rounded text-white ${
+              projectCategory === 3
+                ? "after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse"
+                : ""
+            }`}
+            onClick={() => setProjectCategory(3)}
+          >
+            Individual
+          </button>
+        </div>
+
+        {projects
+          .filter((project) => project.category === projectCategory)
+          .map((project, index) => (
+            <ProjectCard
+              key={index} // Jangan lupa tambahkan key untuk elemen yang diulang
+              order={index + 1}
+              title={project.title}
+              subtitle={project.subtitle}
+              description={project.description}
+              photoSource={project.photo}
+              preview={project.preview}
+              github={project.github}
+            />
+          ))}
       </section>
 
       {/*  */}

@@ -61,6 +61,9 @@
   .mybg-primary {
     background-color: #d65d26;
   }
+  .mybg-primary-hovered {
+    background-color: rgba(214, 93, 38, 0.8);
+  }
   .mybg-darkprimary {
     background-color: #ba4712;
   }
@@ -74,6 +77,21 @@
   .text-title-stroke {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #d65d26;
+  }
+
+  .button-animation-pulse {
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
   }
 }
 

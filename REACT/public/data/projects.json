@@ -1,14 +1,29 @@
 [
   {
-    "title": "SMART IDUKA",
-    "subtitle": "Web tempat kalian menemukan pekerjaan",
-    "description": "Ini merupakan project tim pertama saya, dimana project ini saya buat ketika sata mengikuti kompetisi KKSI SMART SCHOLL SMK se-Indonesia 2020. Project ini dibuat sekitar 1.5 bulan dan walaupun belum mendapat hasil maksimal tapi project ini 'Luar Biasa'",
-    "photo": "/images/projects/project-1.jpg"
+    "title": "NUTEAM Company Profile",
+    "subtitle": "Company Profile NUTEAM for Collabolation and Monitoring",
+    "description": "Company Profile untuk aplikasi NUTEAM yang di develop oleh tim cinta.id. Saya sebagai Frontend Developer yang bertugas untuk membuat company profile serta CMS Nuteam pada saat itu.",
+    "photo": "/images/projects/nuteam.png",
+    "preview": "https://nuteam.id",
+    "github": "",
+    "category": 2
+  },
+  {
+    "title": "Safrenz Company Profile",
+    "subtitle": "Company Profile Safrenz Pengelola Property",
+    "description": "Company Profile untuk aplikasi SAFRENZ yang di develop oleh tim cinta.id. Saya sebagai Frontend Developer yang bertugas untuk membuat company profile serta saya juga yang meng-handle Backend untuk aplikasi Safrenz ini.",
+    "photo": "/images/projects/safrenz.png",
+    "preview": "https://safrenz.com",
+    "github": "",
+    "category": 2
   },
   {
     "title": "SMART IDUKA",
     "subtitle": "Web tempat kalian menemukan pekerjaan",
     "description": "Ini merupakan project tim pertama saya, dimana project ini saya buat ketika sata mengikuti kompetisi KKSI SMART SCHOLL SMK se-Indonesia 2020. Project ini dibuat sekitar 1.5 bulan dan walaupun belum mendapat hasil maksimal tapi project ini 'Luar Biasa'",
-    "photo": "/images/projects/project-1.jpg"
+    "photo": "/images/projects/safrenz.png",
+    "preview": "https://safrenz.com",
+    "github": "",
+    "category": 1
   }
 ]

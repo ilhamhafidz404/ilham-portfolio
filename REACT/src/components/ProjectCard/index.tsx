@@ -8,12 +8,16 @@ export default function ProjectCard({
   subtitle,
   description,
   photoSource,
+  preview,
+  github,
 }: {
   order: number;
   title: string;
   subtitle: string;
   description: string;
   photoSource: string;
+  preview: string;
+  github: string;
 }) {
   return (
     <div className="sm:flex block justify-center mt-10">
@@ -32,18 +36,14 @@ export default function ProjectCard({
           <h6 className="text-sm text-gray-800 myfont-poppins dark:text-gray-100 italic">
             {subtitle}
           </h6>
-          <p className="mt-5 text-gray-600 myfont-roboto-mono text-sm dark:text-gray-200">
+          <p className="mt-5 text-gray-600 myfont-roboto-mono dark:text-gray-200">
             {description}
           </p>
           <div className="flex gap-2 mt-10">
-            <Button
-              text="See in Github"
-              target="https://github.com/ilhamhafidz404/smart-iduka-final"
-              size="sm"
-            />
+            <Button text="See in Github" target={github} size="sm" />
             <Button
               text="Preview"
-              target="https://github.com/ilhamhafidz404/smart-iduka-final"
+              target={preview}
               type="outline"
               icon={<PreviewIcon />}
               size="sm"

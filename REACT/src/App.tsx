@@ -75,7 +75,7 @@ function App() {
             }`}
             onClick={() => setProjectCategory(1)}
           >
-            Competition
+            Perlombaan
           </button>
 
           <button
@@ -86,7 +86,7 @@ function App() {
             }`}
             onClick={() => setProjectCategory(2)}
           >
-            Company
+            Pekerjaan
           </button>
           <button
             className={`relative mybg-primary hover:mybg-primary-hovered px-5 py-2 rounded text-white ${
@@ -96,7 +96,7 @@ function App() {
             }`}
             onClick={() => setProjectCategory(3)}
           >
-            Individual
+            Individu
           </button>
         </div>
 

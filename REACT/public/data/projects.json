@@ -1,5 +1,23 @@
 [
   {
+    "title": "SMART IDUKA",
+    "subtitle": "Web tempat kalian menemukan pekerjaan",
+    "description": "Ini adalah proyek tim pertama saya yang dibuat saat mengikuti kompetisi KKSI SMART SCHOOL SMK se-Indonesia pada tahun 2020. Proyek ini dikerjakan dalam waktu sekitar 1,5 bulan. Meskipun belum mencapai hasil yang maksimal, proyek ini tetap memberikan pengalaman yang luar biasa",
+    "photo": "/images/projects/smart-iduka.png",
+    "preview": "https://safrenz.com",
+    "github": "",
+    "category": 1
+  },
+  {
+    "title": "Warisan Nusantara",
+    "subtitle": "Web tempat kalian menemukan pekerjaan",
+    "description": "Ini adalah proyek tim pertama saya yang dibuat saat mengikuti kompetisi KKSI SMART SCHOOL SMK se-Indonesia pada tahun 2020. Proyek ini dikerjakan dalam waktu sekitar 1,5 bulan. Meskipun belum mencapai hasil yang maksimal, proyek ini tetap memberikan pengalaman yang luar biasa",
+    "photo": "/images/projects/warisan-nusantara.png",
+    "preview": "https://warisannusantara.vercel.app/",
+    "github": "",
+    "category": 1
+  },
+  {
     "title": "NUTEAM Company Profile",
     "subtitle": "Company Profile NUTEAM for Collabolation and Monitoring",
     "description": "Company Profile untuk aplikasi NUTEAM yang di develop oleh tim cinta.id. Saya sebagai Frontend Developer yang bertugas untuk membuat company profile serta CMS Nuteam pada saat itu.",
@@ -16,14 +34,5 @@
     "preview": "https://safrenz.com",
     "github": "",
     "category": 2
-  },
-  {
-    "title": "SMART IDUKA",
-    "subtitle": "Web tempat kalian menemukan pekerjaan",
-    "description": "Ini merupakan project tim pertama saya, dimana project ini saya buat ketika sata mengikuti kompetisi KKSI SMART SCHOLL SMK se-Indonesia 2020. Project ini dibuat sekitar 1.5 bulan dan walaupun belum mendapat hasil maksimal tapi project ini 'Luar Biasa'",
-    "photo": "/images/projects/safrenz.png",
-    "preview": "https://safrenz.com",
-    "github": "",
-    "category": 1
   }
 ]

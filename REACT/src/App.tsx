@@ -3,15 +3,17 @@ import { useState } from "react";
 // components
 import Header from "./components/Header/Header";
 import TitleSection from "./components/TitleSection";
-import QuoteCard from "./components/QuoteCard";
 import Button from "./components/Button";
 import ProjectCard from "./components/ProjectCard";
+import { SkillDock } from "./components/Dock";
 
 // icon
 import DownloadIcon from "./components/Icons/Download";
 
 // data
 import dataProject from "../public/data/projects.json";
+import dataSkill from "../public/data/skills.json";
+import dataTool from "../public/data/tools.json";
 
 function App() {
   const [projects, _] = useState(dataProject);
@@ -41,41 +43,61 @@ function App() {
 
       <Header />
 
-      <TitleSection title="ABOUT" />
+      <section className="bg-gray-100">
+        <div className="container h-screen">
+          <TitleSection title="ABOUT" />
+          <div className="grid grid-cols-3">
+            {/* <QuoteCard /> */}
+            <div>
+              <img
+                src="/images/ilham.JPG"
+                alt="ilham-hafidz"
+                className="rounded border p-2"
+              />
+            </div>
+            <div className="col-span-2 flex items-center">
+              <section className="-ml-[50px] bg-white p-10 rounded shadow-md">
+                <h5 className="myfont-montserrat mytext-primary">
+                  Hello Guys, I am Ilham Hafidz
+                </h5>
+                <h4 className="text-3xl font-bold tracking-wide myfont-montserrat dark:text-gray-100">
+                  FULLSTACK WEB DEVELOPER
+                </h4>
+                <p className="mt-5 text-gray-800 myfont-roboto-mono dark:text-gray-200">
+                  Saya telah mengerjakan beberapa proyek, baik secara individu
+                  maupun dalam tim. Ketika mengerjakan proyek individu, saya
+                  terbiasa menangani desain frontend dan backend sebuah website.
+                  Biasanya, saya menggunakan Laravel dan VueJS untuk
+                  proyek-proyek tersebut. Sementara itu, dalam proyek tim, saya
+                  lebih fokus dan mahir di bidang frontend.
+                </p>
 
-      <section className="container">
-        <div className="grid grid-cols-3">
-          <QuoteCard />
-          <div className="col-span-2 flex items-center">
-            <section className="md:ml-10 lg:ml-0 md:text-center lg:text-left text-center">
-              <h5 className="myfont-montserrat mytext-primary">
-                Hello Guys, I am Ilham Hafidz
-              </h5>
-              <h4 className="text-3xl font-bold tracking-wide myfont-montserrat dark:text-gray-100">
-                FULLSTACK WEB DEVELOPER
-              </h4>
-              <p className="mt-5 text-gray-800 myfont-roboto-mono dark:text-gray-200">
-                Saya telah mengerjakan beberapa proyek, baik secara individu
-                maupun dalam tim. Ketika mengerjakan proyek individu, saya
-                terbiasa menangani desain frontend dan backend sebuah website.
-                Biasanya, saya menggunakan Laravel dan VueJS untuk proyek-proyek
-                tersebut. Sementara itu, dalam proyek tim, saya lebih fokus dan
-                mahir di bidang frontend.
-              </p>
-              <div className="mt-10">
-                <Button
-                  text="Download CV"
-                  target=""
-                  icon={<DownloadIcon />}
-                  addedClass="mr-4"
-                />
-                <Button
-                  text="Hire Me"
-                  target="mailto:ilhammhafidzz@gmail.com"
-                  type="outline"
-                />
-              </div>
-            </section>
+                <div className="flex gap-5">
+                  <div>
+                    <h3 className="mt-10 font-semibold">This is my Skills</h3>
+                    <SkillDock data={dataSkill} />
+                  </div>
+                  <div>
+                    <h3 className="mt-10 font-semibold">This is my Tools</h3>
+                    <SkillDock data={dataTool} />
+                  </div>
+                </div>
+
+                <div className="mt-10 inline-flex">
+                  <Button
+                    text="Download CV"
+                    target=""
+                    icon={<DownloadIcon />}
+                    addedClass="mr-4"
+                  />
+                  <Button
+                    text="Hire Me"
+                    target="mailto:ilhammhafidzz@gmail.com"
+                    type="outline"
+                  />
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </section>

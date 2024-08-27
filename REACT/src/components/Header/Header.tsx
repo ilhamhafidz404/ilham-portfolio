@@ -30,16 +30,13 @@ export default function Header() {
                   text="Lihat Tentang Saya"
                   target="https://github.com/ilhamhafidz404?tab=repositories"
                 />
-                <a
-                  href={"target"}
-                  target="_blank"
-                  className={
-                    "inline-flex gap-2 items-center bg-gray-300 text-gray-800 rounded font-semibold hover:opacity-90 hover:shadow-md text-sm px-5 py-3"
-                  }
-                >
-                  <DocumentIcon />
-                  Download CV
-                </a>
+                <Button
+                  text="Download CV"
+                  target="mailto:ilhammhafidzz@gmail.com"
+                  type="outline"
+                  icon={<DocumentIcon />}
+                  addedClass="gap-1"
+                />
               </div>
             </div>
           </div>

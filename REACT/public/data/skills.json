@@ -1,0 +1,28 @@
+[
+  { "img": "/images/skills/vue.png", "alt": "Vue JS", "class": "w-7" },
+  {
+    "img": "/images/skills/react.png",
+    "alt": "REACT JS & REACT Native",
+    "class": "w-8"
+  },
+  {
+    "img": "/images/skills/tailwind.png",
+    "alt": "Tailwind CSS",
+    "class": "w-9"
+  },
+  {
+    "img": "/images/skills/bootstrap.png",
+    "alt": "Bootstrap",
+    "class": "w-7"
+  },
+  {
+    "img": "/images/skills/golang.png",
+    "alt": "Golang",
+    "class": "w-10"
+  },
+  {
+    "img": "/images/skills/laravel.png",
+    "alt": "Laravel",
+    "class": "w-7"
+  }
+]

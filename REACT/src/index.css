@@ -82,6 +82,26 @@
   .button-animation-pulse {
     animation: pulse 2s infinite;
   }
+
+  .circle-gradient {
+    background: radial-gradient(
+      circle at center,
+      #d65d26 10%,
+      white 70%,
+      white 100%
+    );
+  }
+
+  .moving-border {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+
   @keyframes pulse {
     0% {
       transform: scale(0.9);

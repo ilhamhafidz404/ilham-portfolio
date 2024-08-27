@@ -20,6 +20,25 @@ function App() {
 
   return (
     <main className="text-gray-800">
+      <nav className="flex justify-between items-center px-28 py-5 fixed left-0 right-0 z-50 bg-white border-b border-[#d65d26]/70">
+        <div>
+          <h3 className="text-xl font-semibold">ILHAM HAFIDZ</h3>
+        </div>
+        <div>
+          <ul className="flex gap-5">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Project</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
       <Header />
 
       <TitleSection title="ABOUT" />

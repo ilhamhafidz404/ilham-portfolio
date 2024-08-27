@@ -1,15 +1,16 @@
 import SparklesText from "../../../@/components/magicui/sparkles-text";
 import Button from "../Button";
+import DocumentIcon from "../Icons/Document";
 import PhotoCard from "./PhotoCard";
 
 export default function Header() {
   return (
-    <div className="container mx-auto" id="home">
-      <header className="myfont-montserrat lg:px-8 px-0 md:pt-28 pt-14 ">
+    <div className="container mx-auto h-screen" id="home">
+      <header className="myfont-montserrat px-0 md:pt-28 pt-14">
         <div className="flex md:flex-row flex-col-reverse">
           <div className="flex items-center justify-center md:w-1/2 w-full sm:mt-0 mt-10">
             <div className="md:pl-5 lg:pl-20 pl-0 md:text-left text-center">
-              <h3 className="mytext-primary font-light tracking-tighter text-xl">
+              <h3 className="mytext-primary tracking-tighter text-xl">
                 Hello I am
               </h3>
               <SparklesText
@@ -24,16 +25,21 @@ export default function Header() {
                 dari membangun situs web responsif hingga mengembangkan aplikasi
                 web kompleks.
               </p>
-              <div className="mt-7">
+              <div className="mt-7 flex gap-3">
                 <Button
-                  text="Lihat Projek Saya"
+                  text="Lihat Tentang Saya"
                   target="https://github.com/ilhamhafidz404?tab=repositories"
                 />
-
-                {/* <ShinyButton
-                    text="Lihat projek saya"
-                    className="border-[#d65d26] border mytext-primary px-7 py-3 rounded-3xl font-semibold hover:opacity-90 hover:shadow-md"
-                  /> */}
+                <a
+                  href={"target"}
+                  target="_blank"
+                  className={
+                    "inline-flex gap-2 items-center bg-gray-300 text-gray-800 rounded font-semibold hover:opacity-90 hover:shadow-md text-sm px-5 py-3"
+                  }
+                >
+                  <DocumentIcon />
+                  Download CV
+                </a>
               </div>
             </div>
           </div>

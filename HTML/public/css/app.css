@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200300;400;500;600;700;800;900");
-#skillTitle::before, #aboutTitle::before, #projectTitle::before, #statTitle::before, #galeryTitle::before {
+#skillTitle::before,
+#aboutTitle::before,
+#projectTitle::before,
+#statTitle::before,
+#galeryTitle::before {
   color: transparent;
   position: absolute;
   -webkit-text-stroke-width: 2px;
@@ -29,7 +33,10 @@
   content: "GALERY";
 }
 
-.dark #skillTitle::before, .dark #aboutTitle::before, .dark #projectTitle::before, .dark #statTitle::before {
+.dark #skillTitle::before,
+.dark #aboutTitle::before,
+.dark #projectTitle::before,
+.dark #statTitle::before {
   -webkit-text-stroke-color: #7853dd;
 }
 
@@ -100,7 +107,9 @@
 .card:hover h4 {
   color: #333 !important;
 }
-.card:hover .laravel-img, .card:hover .tailwind-img, .card:hover .vuejs-img {
+.card:hover .laravel-img,
+.card:hover .tailwind-img,
+.card:hover .vuejs-img {
   top: -70px;
   z-index: -1;
   left: -30px;
@@ -157,7 +166,14 @@
 }
 
 .instagram:hover {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
 }
 
 #stat {
@@ -206,7 +222,9 @@
   visibility: visible;
 }
 
-.coffe-box, .youtube-box, .patreon-box {
+.coffe-box,
+.youtube-box,
+.patreon-box {
   position: relative;
   border-radius: 10px;
   height: 250px;
@@ -225,7 +243,9 @@
   background-color: #f96854;
 }
 
-.coffe-box::before, .youtube-box::before, .patreon-box::before {
+.coffe-box::before,
+.youtube-box::before,
+.patreon-box::before {
   content: "SAWERIA";
   position: absolute;
   color: #fff;
@@ -257,7 +277,9 @@
   z-index: 3;
 }
 
-.coffe-box:hover .keyboard-detail-button, .youtube-box:hover .keyboard-detail-button, .patreon-box:hover .keyboard-detail-button {
+.coffe-box:hover .keyboard-detail-button,
+.youtube-box:hover .keyboard-detail-button,
+.patreon-box:hover .keyboard-detail-button {
   opacity: 1;
   bottom: 20px;
 }
@@ -294,4 +316,4 @@ nav.open .nav-content span {
 }
 nav.open .toggle-btn {
   transform: rotate(0deg);
-}/*# sourceMappingURL=app.css.map */
+} /*# sourceMappingURL=app.css.map */

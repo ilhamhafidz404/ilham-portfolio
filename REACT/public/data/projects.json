@@ -1,7 +1,7 @@
 [
   {
     "title": "SMART IDUKA",
-    "subtitle": "Web tempat kalian menemukan pekerjaan",
+    "subtitle": "Temukan Pekerjaan di Dunia Usaha dan Dunia Industri",
     "description": "Ini adalah proyek tim pertama saya yang dibuat saat mengikuti kompetisi KKSI SMART SCHOOL SMK se-Indonesia pada tahun 2020. Proyek ini dikerjakan dalam waktu sekitar 1,5 bulan. Meskipun belum mencapai hasil yang maksimal, proyek ini tetap memberikan pengalaman yang luar biasa",
     "photo": "/images/projects/smart-iduka.png",
     "preview": "https://safrenz.com",
@@ -10,8 +10,8 @@
   },
   {
     "title": "Warisan Nusantara",
-    "subtitle": "Web tempat kalian menemukan pekerjaan",
-    "description": "Ini adalah proyek tim pertama saya yang dibuat saat mengikuti kompetisi KKSI SMART SCHOOL SMK se-Indonesia pada tahun 2020. Proyek ini dikerjakan dalam waktu sekitar 1,5 bulan. Meskipun belum mencapai hasil yang maksimal, proyek ini tetap memberikan pengalaman yang luar biasa",
+    "subtitle": "Kenali Keragaman Budaya Indonesia",
+    "description": "Ini merupakan project saya saay mengikuti kompetisi INTECHFEST 2024 di Politeknik Negeri Semarang. Diikuti seluruh kampus indonesia di kategory Nasioanal dengan kompetisi yang mengusung tema 'Melestarikan Budaya Indonesia'. Saya mendapat Juara 1 pada gelaran kompetisi ini.",
     "photo": "/images/projects/warisan-nusantara.png",
     "preview": "https://warisannusantara.vercel.app/",
     "github": "",
@@ -34,5 +34,32 @@
     "preview": "https://safrenz.com",
     "github": "",
     "category": 2
+  },
+  {
+    "title": "Warisan Nusantara",
+    "subtitle": "Kenali Keragaman Budaya Indonesia",
+    "description": "Ini merupakan project saya saay mengikuti kompetisi INTECHFEST 2024 di Politeknik Negeri Semarang. Diikuti seluruh kampus indonesia di kategory Nasioanal dengan kompetisi yang mengusung tema 'Melestarikan Budaya Indonesia'. Saya mendapat Juara 1 pada gelaran kompetisi ini.",
+    "photo": "/images/projects/warisan-nusantara.png",
+    "preview": "https://warisannusantara.vercel.app/",
+    "github": "",
+    "category": 3
+  },
+  {
+    "title": "NUTEAM Company Profile",
+    "subtitle": "Company Profile NUTEAM for Collabolation and Monitoring",
+    "description": "Company Profile untuk aplikasi NUTEAM yang di develop oleh tim cinta.id. Saya sebagai Frontend Developer yang bertugas untuk membuat company profile serta CMS Nuteam pada saat itu.",
+    "photo": "/images/projects/nuteam.png",
+    "preview": "https://nuteam.id",
+    "github": "",
+    "category": 3
+  },
+  {
+    "title": "Safrenz Company Profile",
+    "subtitle": "Company Profile Safrenz Pengelola Property",
+    "description": "Company Profile untuk aplikasi SAFRENZ yang di develop oleh tim cinta.id. Saya sebagai Frontend Developer yang bertugas untuk membuat company profile serta saya juga yang meng-handle Backend untuk aplikasi Safrenz ini.",
+    "photo": "/images/projects/safrenz.png",
+    "preview": "https://safrenz.com",
+    "github": "",
+    "category": 3
   }
 ]

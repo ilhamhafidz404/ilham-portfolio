@@ -14,6 +14,9 @@ import DownloadIcon from "./components/Icons/Download";
 import dataProject from "../public/data/projects.json";
 import dataSkill from "../public/data/skills.json";
 import dataTool from "../public/data/tools.json";
+import TrophyIcon from "./components/Icons/Trophy";
+import { Briefcase } from "lucide-react";
+import UserIcon from "./components/Icons/User";
 
 function App() {
   const [projects, _] = useState(dataProject);
@@ -29,13 +32,19 @@ function App() {
         <div>
           <ul className="flex gap-5">
             <li>
-              <a href="">Home</a>
+              <a className="font-semibold hover:mytext-primary" href="#home">
+                Home
+              </a>
             </li>
             <li>
-              <a href="">About</a>
+              <a className="font-semibold hover:mytext-primary" href="#about">
+                About
+              </a>
             </li>
             <li>
-              <a href="">Project</a>
+              <a className="font-semibold hover:mytext-primary" href="#project">
+                Project
+              </a>
             </li>
           </ul>
         </div>
@@ -43,7 +52,7 @@ function App() {
 
       <Header />
 
-      <section className="bg-gray-100">
+      <section className="bg-gray-100" id="about">
         <div className="container h-screen">
           <TitleSection title="ABOUT" />
           <div className="grid grid-cols-3">
@@ -72,7 +81,7 @@ function App() {
                   lebih fokus dan mahir di bidang frontend.
                 </p>
 
-                <div className="flex gap-5">
+                <div className="flex gap-5 min-h-[180px]">
                   <div>
                     <h3 className="mt-10 font-semibold">This is my Skills</h3>
                     <SkillDock data={dataSkill} />
@@ -104,40 +113,43 @@ function App() {
 
       {/*  */}
 
-      <section className="container">
+      <section className="container" id="project">
         <TitleSection title="PROJECT" />
 
-        <div className="mt-1 text-center">
+        <div className="mt-1 mb-20 text-center">
           <div className="gap-5 inline-flex justify-center border rounded border-gray-100 bg-gray-100">
             <button
-              className={`relative mytext-primary hover:mybg-primary-hovered px-5 py-2 rounded ${
+              className={`flex gap-2 relative hover:mybg-primary-hovered px-5 py-2 rounded ${
                 projectCategory === 1
-                  ? "hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
                   : ""
               }`}
               onClick={() => setProjectCategory(1)}
             >
+              <TrophyIcon />
               Perlombaan
             </button>
 
             <button
-              className={`relative mytext-primary hover:mybg-primary-hovered px-5 py-2 rounded ${
+              className={`flex gap-2 relative hover:mybg-primary-hovered px-5 py-2 rounded ${
                 projectCategory === 2
-                  ? "hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
                   : ""
               }`}
               onClick={() => setProjectCategory(2)}
             >
+              <Briefcase />
               Pekerjaan
             </button>
             <button
-              className={`relative mytext-primary hover:mybg-primary-hovered px-5 py-2 rounded ${
+              className={`flex gap-2  relative hover:mybg-primary-hovered px-5 py-2 rounded ${
                 projectCategory === 3
-                  ? "hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
                   : ""
               }`}
               onClick={() => setProjectCategory(3)}
             >
+              <UserIcon />
               Individu
             </button>
           </div>
@@ -161,23 +173,10 @@ function App() {
 
       {/*  */}
 
-      <footer className="mt-28 mybg-primary">
-        {/* <div className="flex items-center justify-center gap-20 py-10">
-          <div>
-            <h4 className="text-2xl font-semibold">
-              🚀LETS BUILD SOMETHING AWESOME
-            </h4>
-          </div>
-          <div>
-            <Button text="Learn More" target="" />
-          </div>
-        </div> */}
-        {/* <div className="mybg-primary top lg:px-24 sm:px-8 px-5 py-10 flex md:flex-row flex-col"></div> */}
-        <div className="mybg-primary py-5">
-          <h5 className="myfont-roboto-mono text-center text-white">
-            &copy; Copyright Ilham Hafidz
-          </h5>
-        </div>
+      <footer className="container py-5 mt-28 border-t myborder-primary">
+        <p className="myfont-roboto-mono text-gray-800 text-sm">
+          &copy; Copyright Ilham Hafidz
+        </p>
       </footer>
     </main>
   );

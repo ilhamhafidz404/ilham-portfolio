@@ -59,7 +59,7 @@
   }
 
   .mybg-primary {
-    background-color: #d65d26;
+    background-color: #d65d26 !important;
   }
   .mybg-primary-hovered {
     background-color: rgba(214, 93, 38, 0.2);

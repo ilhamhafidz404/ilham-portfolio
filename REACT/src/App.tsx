@@ -107,38 +107,40 @@ function App() {
       <section className="container">
         <TitleSection title="PROJECT" />
 
-        <div className="gap-5 flex justify-center">
-          <button
-            className={`relative mybg-primary hover:mybg-primary-hovered px-5 py-2 rounded text-white ${
-              projectCategory === 1
-                ? "after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse"
-                : ""
-            }`}
-            onClick={() => setProjectCategory(1)}
-          >
-            Perlombaan
-          </button>
+        <div className="mt-1 text-center">
+          <div className="gap-5 inline-flex justify-center border rounded border-gray-100 bg-gray-100">
+            <button
+              className={`relative mytext-primary hover:mybg-primary-hovered px-5 py-2 rounded ${
+                projectCategory === 1
+                  ? "hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  : ""
+              }`}
+              onClick={() => setProjectCategory(1)}
+            >
+              Perlombaan
+            </button>
 
-          <button
-            className={`relative mybg-primary hover:mybg-primary-hovered px-5 py-2 rounded text-white ${
-              projectCategory === 2
-                ? "after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse"
-                : ""
-            }`}
-            onClick={() => setProjectCategory(2)}
-          >
-            Pekerjaan
-          </button>
-          <button
-            className={`relative mybg-primary hover:mybg-primary-hovered px-5 py-2 rounded text-white ${
-              projectCategory === 3
-                ? "after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse"
-                : ""
-            }`}
-            onClick={() => setProjectCategory(3)}
-          >
-            Individu
-          </button>
+            <button
+              className={`relative mytext-primary hover:mybg-primary-hovered px-5 py-2 rounded ${
+                projectCategory === 2
+                  ? "hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  : ""
+              }`}
+              onClick={() => setProjectCategory(2)}
+            >
+              Pekerjaan
+            </button>
+            <button
+              className={`relative mytext-primary hover:mybg-primary-hovered px-5 py-2 rounded ${
+                projectCategory === 3
+                  ? "hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  : ""
+              }`}
+              onClick={() => setProjectCategory(3)}
+            >
+              Individu
+            </button>
+          </div>
         </div>
 
         {projects

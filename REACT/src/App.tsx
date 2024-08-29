@@ -26,7 +26,12 @@ function App() {
   return (
     <main className="text-gray-800">
       <nav className="flex justify-between items-center px-28 py-5 fixed left-0 right-0 z-50 bg-white border-b border-[#d65d26]/70">
-        <div>
+        <div className="flex items-center gap-1">
+          <img
+            src="/images/ilham-logo.png"
+            alt="ilham-logo"
+            className="w-[40px]"
+          />
           <h3 className="text-xl font-semibold">ILHAM HAFIDZ</h3>
         </div>
         <div>

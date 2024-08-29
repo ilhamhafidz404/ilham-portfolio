@@ -41,7 +41,7 @@ export default function Badge() {
 
   return (
     <div
-      className="absolute bottom-1/2 right-20 z-10 py-3 px-6 flex items-center gap-3 rounded"
+      className="absolute bottom-1/2 right-20 z-10 py-3 px-6 items-center gap-3 rounded lg:flex hidden"
       ref={movingBorderRef}
       style={{
         background: "rgba(255, 255, 255, 0.19)",

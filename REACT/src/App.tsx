@@ -57,7 +57,7 @@ function App() {
 
       <Header />
 
-      <section className="bg-gray-100" id="about">
+      <section className="bg-gray-100 lg:pb-0 pb-20" id="about">
         <div className="container lg:h-screen">
           <TitleSection title="ABOUT" />
           <div className="grid lg:grid-cols-3">

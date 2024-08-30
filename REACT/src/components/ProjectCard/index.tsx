@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Button from "../Button";
 import PreviewIcon from "../Icons/Preview";
 import ProjectPhoto from "./ProjectPhoto";
@@ -19,14 +20,31 @@ export default function ProjectCard({
   preview: string;
   github: string;
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 640) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  // create an event listener
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
+
   return (
     <div className="sm:flex block justify-center mt-10">
-      {order % 2 > 0 && <ProjectPhoto photoSource={photoSource} />}
+      {isMobile && <ProjectPhoto photoSource={photoSource} />}
+      {order % 2 > 0 && !isMobile && <ProjectPhoto photoSource={photoSource} />}
       <div
         className={
           order % 2 > 0
-            ? "flex items-center sm:w-1/2 w-full z-10 sm:mt-0 -mt-16 sm:-ml-20 mx-0"
-            : "flex items-center sm:w-1/2 w-full z-10 sm:mt-0 -mt-16 sm:-mr-20 mx-0"
+            ? "flex items-center sm:w-1/2 w-full z-10 sm:mt-0 -mt-16 lg:-ml-20"
+            : "flex items-center sm:w-1/2 w-full z-10 sm:mt-0 -mt-16 lg:-mr-20"
         }
       >
         <div className="mybg-gray dark:bg-gray-800 px-8 py-7 rounded-md shadow bg-white">
@@ -52,7 +70,9 @@ export default function ProjectCard({
           </div>
         </div>
       </div>
-      {order % 2 == 0 && <ProjectPhoto photoSource={photoSource} />}
+      {order % 2 == 0 && !isMobile && (
+        <ProjectPhoto photoSource={photoSource} />
+      )}
     </div>
   );
 }

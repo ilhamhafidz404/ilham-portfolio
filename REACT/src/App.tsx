@@ -58,19 +58,19 @@ function App() {
       <Header />
 
       <section className="bg-gray-100" id="about">
-        <div className="container h-screen">
+        <div className="container lg:h-screen">
           <TitleSection title="ABOUT" />
-          <div className="grid grid-cols-3">
+          <div className="grid lg:grid-cols-3">
             {/* <QuoteCard /> */}
             <div>
               <img
                 src="/images/ilham.JPG"
                 alt="ilham-hafidz"
-                className="rounded border p-2"
+                className="rounded border p-2 lg:w-full w-[400px] lg:h-full h-[400px] object-cover object-bottom mx-auto"
               />
             </div>
-            <div className="col-span-2 flex items-center">
-              <section className="-ml-[50px] bg-white p-10 rounded shadow-md">
+            <div className="lg:col-span-2 flex items-center">
+              <section className="lg:-ml-[50px] lg:mt-0 -mt-[70px] bg-white p-10 rounded shadow-md">
                 <h5 className="myfont-montserrat mytext-primary">
                   Hello Guys, I am Ilham Hafidz
                 </h5>
@@ -86,7 +86,7 @@ function App() {
                   lebih fokus dan mahir di bidang frontend.
                 </p>
 
-                <div className="flex gap-5 min-h-[180px]">
+                <div className="lg:flex gap-5 min-h-[180px]">
                   <div>
                     <h3 className="mt-10 font-semibold">This is my Skills</h3>
                     <SkillDock data={dataSkill} />

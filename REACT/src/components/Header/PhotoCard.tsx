@@ -1,4 +1,4 @@
-import Badge from "./Badge";
+// import Badge from "./Badge";
 
 export default function PhotoCard() {
   return (
@@ -9,7 +9,7 @@ export default function PhotoCard() {
         alt="ilhamhafidz"
         className="rounded md:mt-0 mt-10 relative z-10 lg:w-[500px] w-[350px]"
       />
-      <Badge />
+      {/* <Badge /> */}
     </div>
   );
 }

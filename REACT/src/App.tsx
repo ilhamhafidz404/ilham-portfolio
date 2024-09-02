@@ -17,6 +17,7 @@ import dataTool from "../public/data/tools.json";
 import TrophyIcon from "./components/Icons/Trophy";
 import { Briefcase } from "lucide-react";
 import UserIcon from "./components/Icons/User";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [projects, _] = useState(dataProject);
@@ -25,40 +26,12 @@ function App() {
 
   return (
     <main className="text-gray-800">
-      <nav className="flex justify-between items-center px-28 py-5 fixed left-0 right-0 z-50 bg-white border-b border-[#d65d26]/70">
-        <div className="flex items-center gap-1">
-          <img
-            src="/images/ilham-logo.png"
-            alt="ilham-logo"
-            className="w-[40px]"
-          />
-          <h3 className="text-xl font-semibold">ILHAM HAFIDZ</h3>
-        </div>
-        <div>
-          <ul className="flex gap-5">
-            <li>
-              <a className="font-semibold hover:mytext-primary" href="#home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="font-semibold hover:mytext-primary" href="#about">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="font-semibold hover:mytext-primary" href="#project">
-                Project
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
 
       <Header />
 
-      <section className="bg-gray-100 lg:pb-0 pb-20" id="about">
-        <div className="container lg:h-screen">
+      <section className="bg-gray-100 xl:pb-0 pb-20" id="about">
+        <div className="container xl:h-screen">
           <TitleSection title="ABOUT" />
           <div className="grid lg:grid-cols-3">
             {/* <QuoteCard /> */}

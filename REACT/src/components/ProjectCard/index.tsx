@@ -24,7 +24,7 @@ export default function ProjectCard({
 
   //choose the screen size
   const handleResize = () => {
-    if (window.innerWidth < 640) {
+    if (window.innerWidth < 1024) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -33,18 +33,21 @@ export default function ProjectCard({
 
   // create an event listener
   useEffect(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
+
+    console.log(isMobile);
   });
 
   return (
-    <div className="sm:flex block justify-center mt-10">
+    <div className="lg:flex block justify-center mt-10">
       {isMobile && <ProjectPhoto photoSource={photoSource} />}
       {order % 2 > 0 && !isMobile && <ProjectPhoto photoSource={photoSource} />}
       <div
         className={
           order % 2 > 0
-            ? "flex items-center sm:w-1/2 w-full z-10 sm:mt-0 -mt-16 lg:-ml-20"
-            : "flex items-center sm:w-1/2 w-full z-10 sm:mt-0 -mt-16 lg:-mr-20"
+            ? "flex items-center lg:w-1/2 w-full z-10 lg:mt-0 -mt-16 lg:-ml-20"
+            : "flex items-center lg:w-1/2 w-full z-10 lg:mt-0 -mt-16 lg:-mr-20"
         }
       >
         <div className="mybg-gray dark:bg-gray-800 px-8 py-7 rounded-md shadow bg-white">

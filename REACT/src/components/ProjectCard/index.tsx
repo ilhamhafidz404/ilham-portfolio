@@ -51,16 +51,16 @@ export default function ProjectCard({
         }
       >
         <div className="mybg-gray dark:bg-gray-800 px-8 py-7 rounded-md shadow bg-white">
-          <h1 className="text-3xl myfont-montserrat font-bold tracking-wide">
+          <h1 className="sm:text-3xl text-2xl myfont-montserrat font-bold tracking-wide">
             {title}
           </h1>
-          <h6 className="text-sm mytext-primary myfont-poppins dark:text-gray-100 italic">
+          <h6 className="sm:text-sm text-xs mytext-primary myfont-poppins dark:text-gray-100 italic">
             {subtitle}
           </h6>
-          <p className="mt-5 text-gray-600 myfont-roboto-mono dark:text-gray-200">
+          <p className="mt-5 text-gray-600 myfont-roboto-mono dark:text-gray-200 sm:text-base text-sm">
             {description}
           </p>
-          <div className="flex gap-2 mt-10">
+          <div className="flex flex-col sm:flex-row gap-2 mt-10">
             <Button text="See in Github" target={github} size="sm" />
             <Button
               text="Preview"

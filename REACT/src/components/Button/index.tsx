@@ -15,7 +15,7 @@ export default function Button({
   type?: string;
   size?: string;
 }) {
-  const [sizeValue, setSizeValue] = useState("px-7 py-3");
+  const [sizeValue, setSizeValue] = useState("sm:px-7 sm:py-3 px-5 py-2");
 
   useEffect(() => {
     if (size == "sm") {

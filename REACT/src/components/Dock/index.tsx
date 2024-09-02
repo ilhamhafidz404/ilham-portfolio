@@ -11,10 +11,14 @@ export function SkillDock({
 }) {
   return (
     <div className="relative mt-3">
-      <Dock direction="middle" className="p-5 rounded-md">
+      <Dock direction="middle" className="md:p-5 p-3 rounded-md">
         {data.map((val) => (
           <DockIcon>
-            <img src={val.img} alt={val.alt} className={val.class} />
+            <img
+              src={val.img}
+              alt={val.alt}
+              className={`sm:w-auto w-[25px] ${val.class}`}
+            />
           </DockIcon>
         ))}
       </Dock>

@@ -10,7 +10,7 @@ export default function Navbar() {
           />
           <h3 className="text-xl font-semibold">ILHAM HAFIDZ</h3>
         </div>
-        <div>
+        <div className="sm:block hidden">
           <ul className="flex gap-5">
             <li>
               <a className="font-semibold hover:mytext-primary" href="#home">

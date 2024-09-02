@@ -19,23 +19,24 @@ export default function Header() {
                 sparklesCount={3}
                 colors={{ first: "#d65d26", second: "#d65d26" }}
               />
-              <p className="myfont-roboto-mono mt-7 mb-10 text-sm lg:text-base lg:p-0 px-6 ">
+              <p className="myfont-roboto-mono mt-7 mb-10 text-xs sm:text-sm lg:text-base lg:p-0 px-6 ">
                 Saya adalah web programmer dengan pengalaman empat tahun, selama
                 waktu tersebut saya telah terlibat dalam berbagai proyek, mulai
                 dari membangun situs web responsif hingga mengembangkan aplikasi
                 web kompleks.
               </p>
-              <div className="mt-7 flex gap-3 lg:justify-start justify-center">
+              <div className="mt-7 sm:flex gap-3 lg:justify-start justify-center">
                 <Button
                   text="Lihat Tentang Saya"
                   target="https://github.com/ilhamhafidz404?tab=repositories"
                 />
+                <br className="sm:hidden block" />
                 <Button
                   text="Download CV"
                   target="mailto:ilhammhafidzz@gmail.com"
                   type="outline"
                   icon={<DocumentIcon />}
-                  addedClass="gap-1"
+                  addedClass="gap-1 sm:nt-0 mt-3"
                 />
               </div>
             </div>

@@ -35,8 +35,6 @@ export default function ProjectCard({
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    console.log(isMobile);
   });
 
   return (

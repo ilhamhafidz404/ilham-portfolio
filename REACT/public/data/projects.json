@@ -11,10 +11,19 @@
   {
     "title": "Warisan Nusantara",
     "subtitle": "Kenali Keragaman Budaya Indonesia",
-    "description": "Ini merupakan project saya saay mengikuti kompetisi INTECHFEST 2024 di Politeknik Negeri Semarang. Diikuti seluruh kampus indonesia di kategory Nasioanal dengan kompetisi yang mengusung tema 'Melestarikan Budaya Indonesia'. Saya mendapat Juara 1 pada gelaran kompetisi ini.",
+    "description": "Ini merupakan project saya  mengikuti kompetisi TECHOMFEST 2024 di Politeknik Negeri Semarang. Diikuti seluruh kampus indonesia di kategori Nasioanal dengan kompetisi yang mengusung tema 'Melestarikan Budaya Indonesia'. Saya mendapat Juara 1 pada gelaran kompetisi ini.",
     "photo": "/images/projects/warisan-nusantara.png",
     "preview": "https://warisannusantara.vercel.app/",
     "github": "",
+    "category": 1
+  },
+  {
+    "title": "Alope Tech",
+    "subtitle": "Wujudkan Setup Kerja Impianmu",
+    "description": "Ini merupakan project saya saat mengikuti kompetisi INTECHFEST 2024 di Politeknik Negeri Bali. Diikuti seluruh kampus indonesia di kategori Nasioanal dengan kompetisi yang mengusung tema 'e-commerce'. Saya mendapat Juara 3 pada gelaran kompetisi ini.",
+    "photo": "/images/projects/alope-tech.png",
+    "preview": "https://intechfest-e-commerse.vercel.app/",
+    "github": "https://github.com/ilhamhafidz404/INTECHFEST_E-commerse",
     "category": 1
   },
   {
@@ -38,7 +47,7 @@
   {
     "title": "Warisan Nusantara",
     "subtitle": "Kenali Keragaman Budaya Indonesia",
-    "description": "Ini merupakan project saya saay mengikuti kompetisi INTECHFEST 2024 di Politeknik Negeri Semarang. Diikuti seluruh kampus indonesia di kategory Nasioanal dengan kompetisi yang mengusung tema 'Melestarikan Budaya Indonesia'. Saya mendapat Juara 1 pada gelaran kompetisi ini.",
+    "description": "Ini merupakan project saya saya mengikuti kompetisi INTECHFEST 2024 di Politeknik Negeri Semarang. Diikuti seluruh kampus indonesia di kategori Nasioanal dengan kompetisi yang mengusung tema 'Melestarikan Budaya Indonesia'. Saya mendapat Juara 1 pada gelaran kompetisi ini.",
     "photo": "/images/projects/warisan-nusantara.png",
     "preview": "https://warisannusantara.vercel.app/",
     "github": "",

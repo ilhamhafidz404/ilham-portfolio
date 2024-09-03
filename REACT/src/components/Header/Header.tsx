@@ -36,7 +36,7 @@ export default function Header() {
                   target="mailto:ilhammhafidzz@gmail.com"
                   type="outline"
                   icon={<DocumentIcon />}
-                  addedClass="gap-1 sm:nt-0 mt-3"
+                  addedClass="gap-1 sm:mt-0 mt-3"
                 />
               </div>
             </div>

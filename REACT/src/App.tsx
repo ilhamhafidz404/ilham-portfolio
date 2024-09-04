@@ -100,7 +100,7 @@ function App() {
             <button
               className={`flex gap-2 relative hover:mybg-primary-hovered px-5 py-2 rounded ${
                 projectCategory === 1
-                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-100 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px]  scale-110"
                   : ""
               }`}
               onClick={() => setProjectCategory(1)}
@@ -112,7 +112,7 @@ function App() {
             <button
               className={`flex gap-2 relative hover:mybg-primary-hovered px-5 py-2 rounded ${
                 projectCategory === 2
-                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-100 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px]  scale-110"
                   : ""
               }`}
               onClick={() => setProjectCategory(2)}
@@ -123,7 +123,7 @@ function App() {
             <button
               className={`flex gap-2  relative hover:mybg-primary-hovered px-5 py-2 rounded ${
                 projectCategory === 3
-                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-110 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px] after:button-animation-pulse scale-110"
+                  ? "mytext-primary hover:bg-transparent font-semibold after:content-[''] after:absolute after:mybg-primary after:opacity-20 after:rounded after:scale-100 after:h-[calc(100%+10px)] after:w-[calc(100%+5px)] after:block after:left-[-2.5px] after:top-[-5px]  scale-110"
                   : ""
               }`}
               onClick={() => setProjectCategory(3)}

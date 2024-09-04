@@ -5,7 +5,7 @@ import PhotoCard from "./PhotoCard";
 
 export default function Header() {
   return (
-    <div className="container mx-auto h-screen flex items-center" id="home">
+    <section id="home" className="container mx-auto h-screen flex items-center">
       <header className="myfont-montserrat px-0">
         <div className="flex lg:flex-row flex-col-reverse items-center">
           <div className="flex items-center justify-center lg:w-1/2 w-full sm:mt-0 mt-10">
@@ -44,6 +44,6 @@ export default function Header() {
           <PhotoCard />
         </div>
       </header>
-    </div>
+    </section>
   );
 }

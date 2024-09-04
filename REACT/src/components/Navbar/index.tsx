@@ -16,11 +16,38 @@ export default function Navbar() {
     }
   };
 
-  // create an event listener
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
-  });
+
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll("nav .container ul li");
+
+    const handleScroll = () => {
+      var current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 60) {
+          current = section.getAttribute("id") || current;
+        }
+      });
+
+      navLi.forEach((li) => {
+        li.classList.remove("text-[#d65d26]");
+        if (li.classList.contains(current)) {
+          li.classList.add("text-[#d65d26]");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section>
@@ -36,17 +63,17 @@ export default function Navbar() {
           </div>
           <div className="sm:block hidden">
             <ul className="flex gap-5">
-              <li>
+              <li className="home text-[#d65d26]">
                 <a className="font-semibold hover:mytext-primary" href="#home">
                   Home
                 </a>
               </li>
-              <li>
+              <li className="about">
                 <a className="font-semibold hover:mytext-primary" href="#about">
                   About
                 </a>
               </li>
-              <li>
+              <li className="project">
                 <a
                   className="font-semibold hover:mytext-primary"
                   href="#project"

@@ -63,6 +63,23 @@ function App() {
                       d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
                     />
                   </svg>
+                  Blogs
+                </li>
+                <li className="flex items-center gap-5 px-5 py-3 rounded-md hover:bg-gray-200 mb-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                    />
+                  </svg>
                   About
                 </li>
                 <li className="flex items-center gap-5 px-5 py-3 rounded-md hover:bg-gray-200 mb-2">
@@ -84,23 +101,31 @@ function App() {
                 </li>
               </ul>
               <div>
-                <p className="font-medium">My Social Media</p>
-                <ul className="mt-5">
-                  <li className="flex gap-2 items-center mb-2">
+                <p className="font-medium">Contact Me</p>
+                <ul className="mt-3">
+                  <li className="flex gap-2 items-center mb-2 text-sm">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
                       alt="Instagram"
-                      className="w-[30px]"
+                      className="w-[20px]"
                     />
                     Instagram
                   </li>
-                  <li className="flex gap-2 items-center mb-2">
+                  <li className="flex gap-2 items-center mb-2 text-sm">
                     <img
                       src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?t=st=1725820124~exp=1725823724~hmac=266ca71018292c24229676bcb9aea9f9c3e2fef6ea05a92a476045e8d5225c99&w=740"
                       alt="Instagram"
-                      className="w-[30px] rounded"
+                      className="w-[20px] rounded"
                     />
                     X
+                  </li>
+                  <li className="flex gap-2 items-center mb-2 text-sm">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/768px-Gmail_icon_%282020%29.svg.png"
+                      alt="Gmail"
+                      className="w-[20px]"
+                    />
+                    Gmail
                   </li>
                 </ul>
               </div>
@@ -110,78 +135,82 @@ function App() {
         <main className="text-gray-800 col-span-4 pb-20">
           <Header />
 
-          <div className="border border-[#0d47a1] p-5 rounded-md bg-[#0d47a1]/10 mt-5">
-            <h3 className="text-3xl font-semibold text-[#0d47a1]">NUTEAM</h3>
-            <p className="mt-3">
-              <span className="font-bold">Introducing Natanya</span> - an
-              interactive polling tool that makes it easy to create engaging
-              polls and collect data from an audience in real-time. It can be
-              used during live events, and the results can be displayed with a
-              chart data visualization.
-            </p>
-            <div className="grid grid-cols-2 gap-5 mt-5">
-              <div>
-                <img
-                  src="/images/projects/Nuteam/1.png"
-                  alt="Nuteam 1"
-                  className="w-full h-full object-cover rounded shadow"
-                />
+          <hr className="mt-10" />
+          <section>
+            <h4 className="text-xl font-medium mt-10">Projects</h4>
+            <div className="border border-[#0d47a1] p-7 rounded-md bg-[#0d47a1]/10 mt-3">
+              <h3 className="text-3xl font-semibold text-[#0d47a1]">NUTEAM</h3>
+              <p className="mt-3">
+                <span className="font-bold">Introducing Natanya</span> - an
+                interactive polling tool that makes it easy to create engaging
+                polls and collect data from an audience in real-time. It can be
+                used during live events, and the results can be displayed with a
+                chart data visualization.
+              </p>
+              <div className="grid grid-cols-2 gap-5 mt-5">
+                <div>
+                  <img
+                    src="/images/projects/Nuteam/1.png"
+                    alt="Nuteam 1"
+                    className="w-full h-full object-cover rounded shadow"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/images/projects/Nuteam/2.png"
+                    alt="Nuteam 2"
+                    className="w-full h-full object-cover rounded shadow"
+                  />
+                </div>
               </div>
-              <div>
+              <div className="mt-10">
+                <h5 className="text-2xl font-semibold mb-3">
+                  Featured technologies used
+                </h5>
                 <img
-                  src="/images/projects/Nuteam/2.png"
-                  alt="Nuteam 2"
-                  className="w-full h-full object-cover rounded shadow"
-                />
-              </div>
-            </div>
-            <div className="mt-10">
-              <h5 className="text-2xl font-semibold mb-3">
-                Featured technologies used
-              </h5>
-              <img
-                src="/images/skills/tailwind.png"
-                alt="Tailwind CSS"
-                className="w-[50px]"
-              />
-            </div>
-          </div>
-          <div className="border border-black p-5 rounded-md bg-black/10 mt-5">
-            <h3 className="text-3xl font-semibold text-black">SAFRENZ</h3>
-            <p className="mt-3">
-              <span className="font-bold">Introducing Natanya</span> - an
-              interactive polling tool that makes it easy to create engaging
-              polls and collect data from an audience in real-time. It can be
-              used during live events, and the results can be displayed with a
-              chart data visualization.
-            </p>
-            <div className="grid grid-cols-2 gap-5 mt-5">
-              <div>
-                <img
-                  src="/images/projects/Safrenz/1.png"
-                  alt="Safrenz 1"
-                  className="w-full h-full object-cover rounded shadow"
-                />
-              </div>
-              <div>
-                <img
-                  src="/images/projects/Safrenz/2.png"
-                  alt="Safrenz 2"
-                  className="w-full h-full object-cover rounded shadow"
+                  src="/images/skills/tailwind.png"
+                  alt="Tailwind CSS"
+                  className="w-[50px]"
                 />
               </div>
             </div>
-            <div className="mt-10">
-              <h5 className="text-2xl font-semibold mb-3">
-                Featured technologies used
-              </h5>
-              <img
-                src="/images/skills/tailwind.png"
-                alt="Tailwind CSS"
-                className="w-[50px]"
-              />
+            <div className="border border-black p-7 rounded-md bg-black/10 mt-5">
+              <h3 className="text-3xl font-semibold text-black">SAFRENZ</h3>
+              <p className="mt-3">
+                <span className="font-bold">Introducing Natanya</span> - an
+                interactive polling tool that makes it easy to create engaging
+                polls and collect data from an audience in real-time. It can be
+                used during live events, and the results can be displayed with a
+                chart data visualization.
+              </p>
+              <div className="grid grid-cols-2 gap-5 mt-5">
+                <div>
+                  <img
+                    src="/images/projects/Safrenz/1.png"
+                    alt="Safrenz 1"
+                    className="w-full h-full object-cover rounded shadow"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="/images/projects/Safrenz/2.png"
+                    alt="Safrenz 2"
+                    className="w-full h-full object-cover rounded shadow"
+                  />
+                </div>
+              </div>
+              <div className="mt-10">
+                <h5 className="text-2xl font-semibold mb-3">
+                  Featured technologies used
+                </h5>
+                <img
+                  src="/images/skills/tailwind.png"
+                  alt="Tailwind CSS"
+                  className="w-[50px]"
+                />
+              </div>
             </div>
-          </div>
+          </section>
         </main>
       </section>
     </>

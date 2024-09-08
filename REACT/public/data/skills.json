@@ -24,5 +24,11 @@
     "img": "/images/skills/laravel.png",
     "alt": "Laravel",
     "class": "w-7"
+  },
+  { "img": "/images/tools/github.png", "alt": "Github", "class": "w-8" },
+  {
+    "img": "/images/tools/aws.png",
+    "alt": "AWS",
+    "class": "w-8"
   }
 ]

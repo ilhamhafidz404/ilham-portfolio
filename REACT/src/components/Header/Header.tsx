@@ -8,7 +8,7 @@ import dataSkill from "../../../public/data/skills.json";
 
 export default function Header() {
   return (
-    <section className="h-screen">
+    <section>
       <div className="relative">
         <h2 className="text-4xl font-semibold text-indigo-500">ILHAM HAFIDZ</h2>
         {/* <h1 className="text-6xl font-bold tracking-wide leading-tight after:content-[''] after:bg-gradient-to-r after:from-indigo-500 after:to-indigo-100 after:w-[680px] after:h-[20px] after:absolute after:left-12 after:bottom-3 after:-z-10">
@@ -119,6 +119,35 @@ export default function Header() {
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
           </p>
+        </div>
+      </div>
+
+      {/*  */}
+
+      <hr className="mt-10" />
+      <h4 className="text-xl font-medium mt-10">Experience</h4>
+      <div className="grid grid-cols-2 gap-10 mt-3">
+        <div className="flex items-center gap-5 border rounded-md p-5">
+          <div>
+            <img src="https://cinta.id/images/logo.png" alt="cinta ID" />
+          </div>
+          <div>
+            <h6 className="text-2xl font-semibold">CINTA ID</h6>
+            <p className="text-sm">as Fullstack Developer</p>
+            <p>June 2024 - Present</p>
+            <p>Part Time Remote</p>
+          </div>
+        </div>
+        <div className="flex items-center gap-5 border rounded-md p-5">
+          <div>
+            <img src="https://cinta.id/images/logo.png" alt="cinta ID" />
+          </div>
+          <div>
+            <h6 className="text-2xl font-semibold">Hudoro Solusi Digital</h6>
+            <p className="text-sm">as Fullstack Developer</p>
+            <p>June 2024 - sekarang</p>
+            <p>Part Time Remote</p>
+          </div>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar/index.tsx";
 
 const RootLayout = () => {
   return (
-    <section className="grid grid-cols-5 px-20 gap-16 mt-10">
+    <section className="grid grid-cols-5 px-28 gap-16 mt-10">
       {/* Sidebar tetap tampil di semua halaman */}
       <Sidebar />
 

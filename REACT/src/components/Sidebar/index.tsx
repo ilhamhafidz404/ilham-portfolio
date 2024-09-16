@@ -65,7 +65,7 @@ const links = [
 
 export default function Sidebar() {
   return (
-    <aside>
+    <aside className="bg-white">
       <div className="sticky top-0 h-screen">
         <div className=" flex flex-col justify-between h-full">
           <div>

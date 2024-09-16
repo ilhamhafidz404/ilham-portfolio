@@ -2,7 +2,16 @@ export default function Home() {
   return (
     <section>
       <div className="relative">
-        <h2 className="text-4xl font-semibold text-indigo-500">ILHAM HAFIDZ</h2>
+        {/* <div className="bg-indigo-500 h-[300px] absolute top-0 w-full left-0 -z-10"></div> */}
+        {/* <img
+          src="/images/ilham-about.jpg"
+          alt="Ilham Hafidz"
+          className="w-[300px]"
+        /> */}
+        <h2 className="text-4xl font-semibold text-indigo-500">
+          👋 Hello I'am
+        </h2>
+        {/* <h2 className="text-4xl font-semibold text-indigo-500">Hello I'am</h2> */}
         {/* <h1 className="text-6xl font-bold tracking-wide leading-tight after:content-[''] after:bg-gradient-to-r after:from-indigo-500 after:to-indigo-100 after:w-[680px] after:h-[20px] after:absolute after:left-12 after:bottom-3 after:-z-10">
           a Fullstack Developer
         </h1> */}
@@ -58,9 +67,9 @@ export default function Home() {
           </span>
           <span className="inline-flex gap-2 items-center border rounded-xl px-4 py-2 text-xs font-medium">
             <img
-              src="/images/skills/laravel.png"
-              alt="Laravel"
-              className="w-[25px]"
+              src="/images/skills/next-js.svg"
+              alt="Next Js"
+              className="w-[22px]"
             />
             Next JS
           </span>
@@ -82,9 +91,9 @@ export default function Home() {
           </span>
           <span className="inline-flex gap-2 items-center border rounded-xl px-4 py-2 text-xs font-medium">
             <img
-              src="/images/skills/laravel.png"
-              alt="Laravel"
-              className="w-[25px]"
+              src="/images/skills/express.svg"
+              alt="Express JS"
+              className="w-[22px]"
             />
             Express JS
           </span>

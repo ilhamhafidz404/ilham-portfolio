@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <section className="grid grid-cols-5 px-20 gap-16 mt-20">
+      {/* <section className="grid grid-cols-5 px-20 gap-16 mt-20">
         <aside>
           <div className="sticky top-0 h-screen py-10">
             <div className=" flex flex-col justify-between h-full">
@@ -212,7 +212,7 @@ function App() {
             </div>
           </section>
         </main>
-      </section>
+      </section> */}
     </>
   );
 }
